@@ -36,6 +36,7 @@ const ContactPage = () => {
                             width="100%" 
                             height="450" 
                             loading="lazy"
+                            title="Dikti Location"
                         />    
                     </ContactPageCardDetail>
                 </ContactPageCard>
