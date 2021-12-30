@@ -6,6 +6,10 @@ export const AboutListContainer = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    @media Screen and (max-width: 960px) {
+        padding: 20px;
+    }
 `
 
 export const AboutListTitle = styled.h1`
@@ -18,6 +22,11 @@ export const AboutListContent = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    margin-top: 20px;
+
+    @media Screen and (max-width: 960px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 export const AboutListCard = styled.div`

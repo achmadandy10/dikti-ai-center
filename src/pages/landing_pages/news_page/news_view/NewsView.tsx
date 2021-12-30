@@ -40,10 +40,10 @@ const NewsView = () => {
 
         if (body !== null) {
             if (window.innerWidth <= 500) {
-                if (body.length <= 100) {
+                if (body.length <= 50) {
                     newBody = body
                 } else {
-                    newBody = `${body.substring(0, 100)}...`
+                    newBody = `${body.substring(0, 50)}...`
                 }
             } else if (window.innerWidth <= 768) {
                 if (body.length <= 100) {

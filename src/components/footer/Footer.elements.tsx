@@ -6,7 +6,7 @@ export const FooterContainer = styled.div`
     align-items: center;
     justify-content: center;
     gap: 100px;
-    font-size: var(--small-font-size);
+    font-size: var(--normal-font-size);
     padding: 20px;
     @media only Screen and (max-width: 560px) {
         flex-direction: column-reverse;

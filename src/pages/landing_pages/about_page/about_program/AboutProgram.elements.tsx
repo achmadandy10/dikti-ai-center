@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const AboutProgramContainer = styled.div`
     padding: 20px 80px;
     width: 100%;
+    
+    @media Screen and (max-width: 960px) {
+        padding: 20px;
+    }
 `
 
 export const AboutProgramTitle = styled.h1`
@@ -29,6 +33,7 @@ export const AboutProgramCardTitle = styled.h3`
     font-size: var(--h1-font-size);
     color: var(--first-color);
     font-weight: var(--font-semi-bold);
+    text-align: center;
 `
 
 export const AboutProgramCardDetail = styled.div`

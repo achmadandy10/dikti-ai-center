@@ -5,6 +5,11 @@ export const NewsViewContainer = styled.div`
     width: 100%;
     display: flex;
     gap: 20px;
+    
+    @media Screen and (max-width: 960px) {
+        padding: 20px;
+        flex-direction: column;
+    }
 `
 
 export const NewsViewContentLeft = styled.div`
@@ -52,6 +57,9 @@ export const NewsViewCard = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
+    @media Screen and (max-width: 960px) {
+        height: 100%;
+    }
 `
 
 export const NewsViewCardImage = styled.img`

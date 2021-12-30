@@ -1,4 +1,4 @@
-import { NavbarContainer, NavbarItem, NavbarLink, NavbarList, NavbarLogo, NavbarLogoImg, NavbarMenu, NavbarToggle } from "./Navbar.elements"
+import { NavbarBorderBotttom, NavbarContainer, NavbarItem, NavbarLink, NavbarList, NavbarLogo, NavbarLogoImg, NavbarMenu, NavbarToggle } from "./Navbar.elements"
 import { FaBars, FaChevronDown, FaTimes } from "react-icons/fa"
 import { useState } from "react"
 import Dropdown from "../dropdown/Dropdown"
@@ -12,9 +12,20 @@ const Navbar = () => {
     const [about, setAbout] = useState(false)
     const [service, setService] = useState(false)
     const [kedaireka, setKedaireka] = useState(false)
+    const [scroll, setScroll]= useState(false)
 
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
+
+    const changeScroll = () => {
+        if (window.scrollY >= 80) {
+            setScroll(true)
+        } else {
+            setScroll(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeScroll)
 
     return (
         <NavbarContainer>
@@ -117,6 +128,7 @@ const Navbar = () => {
             <NavbarToggle onClick={ handleClick }>
                 { click ? <FaTimes/> : <FaBars/> }
             </NavbarToggle>
+            <NavbarBorderBotttom className={ scroll ? "active" : "" }/>
         </NavbarContainer>
     )
 }

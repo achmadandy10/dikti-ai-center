@@ -44,6 +44,8 @@ export const NavbarMenu = styled.nav`
         background: var(--container-color);
         border-top: 1px solid var(--title-color);
         width: 100%;
+        padding: 20px;
+        box-shadow: var(--bs-smooth);
 
         &.active {
             left: 0;
@@ -52,6 +54,7 @@ export const NavbarMenu = styled.nav`
 `
 
 export const NavbarToggle = styled.div`
+    cursor: pointer;
     display: none;
 
     @media Screen and (max-width: 960px) {
@@ -83,5 +86,23 @@ export const NavbarLink = styled(Link)`
 
     & svg {
         font-size: var(--small-font-size);
+    }
+`
+
+export const NavbarBorderBotttom = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 1px;
+    width: 0%;
+    transition: .3s ease;
+    background: var(--first-color);
+
+    &.active {
+        width: 100%;
     }
 `

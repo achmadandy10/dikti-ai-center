@@ -3,6 +3,11 @@ import styled from "styled-components";
 export const NewsSectionContainer = styled.div`
     padding: 20px 80px;
     width: 100%;
+
+    @media Screen and (max-width: 960px) {
+        margin-top: 70px;
+        padding: 20px;
+    }
 `
 
 export const NewsSectionTitle = styled.h1`

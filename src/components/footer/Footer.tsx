@@ -3,7 +3,7 @@ import { CopyRightContainer, FooterContainer, FooterCopyRight } from "./Footer.e
 export const CopyRight = () => {
     return (
         <CopyRightContainer>
-            &copy; 2021 Dikti
+            &copy; 2021 Dikti AI Center
         </CopyRightContainer>
     )
 }
@@ -11,7 +11,7 @@ export const CopyRight = () => {
 const Footer = () => {
     return (
         <FooterContainer>
-            <FooterCopyRight>&copy; 2021 Dikti</FooterCopyRight>
+            <FooterCopyRight>&copy; 2021 Dikti AI Center</FooterCopyRight>
         </FooterContainer>
     )
 }   

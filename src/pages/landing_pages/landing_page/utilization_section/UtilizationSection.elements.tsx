@@ -17,6 +17,9 @@ export const UtilizationSectionOverlay = styled.div`
     height: 100%;
     padding: 20px 80px;
     background-color: var(--rgba-color-0-5-white);
+    @media Screen and (max-width: 960px) {
+        padding: 20px;
+    }
 `
 
 export const UtilizationSectionTitle = styled.h1`
@@ -27,12 +30,14 @@ export const UtilizationSectionTitle = styled.h1`
 
 export const UtilizationSectionContent = styled.div`
     margin-top: 20px;
-    /* background: var(--container-color);
-    box-shadow: var(--bs-smooth); */
     border-radius: 4px;
     padding: 20px;
 `
 
 export const UtilizationSectionImage = styled.img`
     width: 100%;
+
+    @media Screen and (max-width: 960px) {
+        height: 300px;
+    }
 `

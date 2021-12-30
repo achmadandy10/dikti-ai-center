@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const NewsListContainer = styled.div`
     padding: 20px 80px;
     width: 100%;
+    
+    @media Screen and (max-width: 960px) {
+        padding: 20px;
+    }
 `
 
 export const NewsListSlider = styled.div`
@@ -12,11 +16,16 @@ export const NewsListSlider = styled.div`
 export const NewsListSlide = styled.div`
     position: relative;
     height: 250px;
+
+    @media Screen and (max-width: 960px) {
+        height: 100%;
+    }
 `
 
 export const NewsListSlideThumbnail = styled.img`
     display: block;
     width: 100%;
+    height: 100%;
 `
 
 export const NewsListSlideDetail = styled.div`
@@ -31,6 +40,10 @@ export const NewsListSlideDetail = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media Screen and (max-width: 960px) {
+        padding: 20px;
+    }
 `
 
 export const NewsListSlideDetailTitle = styled.h3`
@@ -65,6 +78,10 @@ export const NewsListContent = styled.div`
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     row-gap: 50px;
+    
+    @media Screen and (max-width: 960px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 export const NewsListCard = styled.div`
@@ -109,6 +126,7 @@ export const NewsListCardDate = styled.span`
 export const NewsListCardBody = styled.p`
     font-weight: var(--font-slim);
     font-size: var(--normal-font-size);
+    text-align: justify;
 `
 
 export const NewsListCardFooter = styled.div`

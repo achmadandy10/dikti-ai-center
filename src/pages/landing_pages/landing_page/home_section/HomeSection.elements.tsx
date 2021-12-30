@@ -12,10 +12,17 @@ export const HomeSectionContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     width: 100%;
     height: 100%;
     padding: 20px 80px;
     background-color: var(--rgba-color-0-5-white);
+
+    @media Screen and (max-width: 960px) {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 70px;
+    }
 `
 
 export const HomeSectionLeft = styled.div`
