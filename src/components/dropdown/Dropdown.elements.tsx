@@ -14,9 +14,9 @@ export const DropdownList = styled.ul`
     transform: translateY(20px);
     
     &.show {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
+        visibility: visible !important;
+        opacity: 1 !important;
+        transform: translateY(0) !important;
     }
 
     &.clicked {

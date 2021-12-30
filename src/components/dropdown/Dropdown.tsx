@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { DropdownItem, DropdownLink, DropdownList } from "./Dropdown.elements"
 
 interface Link {
@@ -12,9 +11,6 @@ interface Props {
 }
 
 const Dropdown = ({ condition, link }: Props) => {
-    const [click, setClick] = useState(false)
-    
-    const handleClick = () => setClick(!click)
 
     function showDropdown() {
         if (condition) {
@@ -26,15 +22,13 @@ const Dropdown = ({ condition, link }: Props) => {
 
     return (
         <DropdownList 
-            className={ click ? "clicked" : showDropdown() } 
-            onClick={ handleClick }
+            className={ showDropdown() } 
         >
             { link.map((v, idx) => {
                 return (
                     <DropdownItem key={ idx }>
                         <DropdownLink 
                             to={ v.path }
-                            onClick={ () => setClick(false) }
                         >
                             { v.title }
                         </DropdownLink>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Button } from "../../../../components/button/Button"
+import { LoadingElement } from "../../../../components/loading/Loading"
 import { NewsListDetail } from "../../../../dummy/NewsList"
 import { NewsViewCard, NewsViewCardBody, NewsViewCardButtonContainer, NewsViewCardDate, NewsViewCardDetail, NewsViewCardImage, NewsViewCardTitle, NewsViewContainer, NewsViewContentLeft, NewsViewContentRight, NewsViewDetailDate, NewsViewDetailImage, NewsViewDetailTitle } from "./NewsView.elements"
 
@@ -91,7 +92,7 @@ const NewsView = () => {
     })
 
     if (get) {
-        return <>Loading...</>
+        return <LoadingElement/>
     }
 
     return (

@@ -4,6 +4,7 @@ import { NewsListCard, NewsListCardBody, NewsListCardDate, NewsListCardDetail, N
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Keyboard, Autoplay } from 'swiper';
 import { Button } from "../../../../components/button/Button";
+import { LoadingElement } from "../../../../components/loading/Loading";
 
 SwiperCore.use([Navigation, Pagination, Keyboard, Autoplay]);
 
@@ -29,7 +30,7 @@ const NewsList = () => {
     }, [])
 
     if (get) {
-        return <>loading...</>
+        return <LoadingElement/>
     }
 
     const elementSlider = list.slice(0, 5).map(({ title, slug, body, thumbnail, created_at}, idx) => {
