@@ -9,6 +9,10 @@ export const LoginPageContainer = styled.div`
     gap: 20px;
     width: 100%;
     height: 100vh;
+
+    @media Screen and (max-width: 960px) {
+        padding: 20px;
+    }
 `
 
 export const LoginPageImage = styled.img`
@@ -20,6 +24,10 @@ export const LoginPageContent = styled.div`
     box-shadow: var(--bs-smooth);
     padding: 40px;
     border-radius: 4px;
+
+    @media Screen and (max-width: 960px) {
+        width: 100%;
+    }
 `
 
 export const LoginPageTitle = styled.h3`

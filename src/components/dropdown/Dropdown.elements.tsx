@@ -12,6 +12,7 @@ export const DropdownList = styled.ul`
     visibility: hidden;
     opacity: 0;
     transform: translateY(20px);
+    z-index: 100;
     
     &.show {
         visibility: visible !important;

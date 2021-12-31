@@ -8,10 +8,9 @@ const AboutVission = () => {
                 <AboutVissionCard>
                     <AboutVissionCardTitle>Visi</AboutVissionCardTitle>
                     <AboutVissionCardDetail>
-                        Inisiatif dari Dirjen Dikti, Prof. Ir. Nizam, MSc, PhD, dilaunching 14 Oktober 2020 beranggotakan 6 perguruan tinggi, ini 7
-                        Anggota konsortium memiliki fokus pada suatu Domain Aplikasi,
-                        Dalam berkegiatan tetap dikuti oleh semua anggota dan kampus lainnya di Indonesia melalui kerjasama dengan anggota konsorsium
-                        Konsorsium bersifat pendorong dalam berkegiatan penelitian AI di Perguruan Tinggi di Indonesia
+                        “To enhance Higher Education AI capability in the country to ensure it will give big value add for the competitiveness of the country”
+
+                        Meningkatkan kemampuan AI pada Perguruan Tinggi yang berperan besar guna menambah daya saing negara
                     </AboutVissionCardDetail>
                 </AboutVissionCard>
 
@@ -20,19 +19,19 @@ const AboutVission = () => {
                     <AboutVissionCardDetail>
                         <ul>
                             <li>
-                                Menyusun materi pelatihan dan pendidikan → telah berjalan seperti Microcredential baik untuk dosen maupun mahasiswa
+                                Mewujudkan Kecerdasan Artifisial yang beretika sesuai dengan nilai-nilai Pancasila.
                             </li>
                             <li>
-                                Mendukung pelaksanaan pelatihan dan pendidikan di bidang Artificial Intelligence
+                                Menyiapkan Talenta Kecerdasan Artifisial Perguruan Tinggi yang berdaya saing dan berkarakter.
                             </li>
                             <li>
-                                Melakukan pendampingan dalam pelaksanaan DIKTI AI Center, terutama use case untuk pemerintah ataupun industri sebagai bentuk penelitian bersama ataupun pengabdian masyarakat
+                                Mewujudkan ekosistem data dan infrastruktur yang mendukung kontribusi Kecerdasan Artifisial Perguruan Tinggi untuk kepentingan negara.
                             </li>
                             <li>
-                                Melakukan penelahaan  terhadap proposal penggunaan DIKTI AI Center
+                                Menumbuhkembangkan ekosistem kolaborasi riset dan inovasi kecerdasan artifisial Perguruan Tinggi guna mengakselerasi reformasi birokrasi serta industri.
                             </li>
                             <li>
-                                Melakukan kompetisi2 untuk mendorong pemanfaatan DIKTI AI Center
+                                Mengakselerasi publikasi bidang AI baik di tingkat nasional dan internasional
                             </li>
                         </ul>
                     </AboutVissionCardDetail>

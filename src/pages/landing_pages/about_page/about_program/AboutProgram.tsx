@@ -1,4 +1,4 @@
-import { AboutProgramCard, AboutProgramCardDetail, AboutProgramCardTitle, AboutProgramContainer, AboutProgramContent, AboutProgramTitle } from "./AboutProgram.elements"
+import { AboutProgramCard, AboutProgramCardDetail, AboutProgramContainer, AboutProgramContent, AboutProgramTitle } from "./AboutProgram.elements"
 
 const AboutProgram = () => {
     return (
@@ -6,43 +6,51 @@ const AboutProgram = () => {
             <AboutProgramTitle>Program</AboutProgramTitle>
             <AboutProgramContent>
                 <AboutProgramCard>
-                    <AboutProgramCardTitle>Microcredential Training</AboutProgramCardTitle>
                     <AboutProgramCardDetail>
                         <ul>
                             <li>
-                                Konsortium aktif mendorong penyusunan Okupasi bidang Artificial Inteligence dan Standard Kompetensi Kerja Nasional Indonesia (SKKNI)
+                                Penawaran pemanfaatan kepada semua universitas yang ingin menggunakan daya GPU di DIKTI AI Centre untuk Penelitian AI (Desember 2021).
                             </li>
                             <li>
-                                Telah melaksanakan pelatihan untuk dosen baik sebagai kegiatan Dirjen Dikti ataupun sebgai kegiatan kerjasama dengan Kementerian Komunikasi dan Informatika
+                                Peluncuran acara "DIKTI National AI Center of Excellence/AI Super Computer Sharing Facility for Education" yang akan menggunakan daya GPU untuk AI Research mulai Januari 2022
                             </li>
                             <li>
-                                Melaksanakan pelatihan untuk mahasiswa sebagai bentuk Microcredential Associate Data Scientist
+                                Kompetisi Start Up AI Nasional untuk Pendidikan
+                            </li>
+                            <li>
+                                Hackathon / Bootcamp AI untuk Akademisi
+                            </li>
+                            <li>
+                                Memulai Workshop AI Webinar/Seminar/Conference (Nasional/Internasional), Tech Talk, dan AI Startup Incubator secara berkala.
+                            </li>
+                            <li>
+                                Penelitian Bersama dengan Univ Florida USA/Univ Cambridge UK, NTU/NUS Singapura dan PT lain yang potensial
+                            </li>
+                            <li>
+                                Pemilihan beberapa bidang/topik R&D AI Nasional untuk dipimpin oleh konsorsium dengan fokus yaitu:
+                                <ol>
+                                    <li>
+                                        AI untuk Pertanian
+                                    </li>
+                                    <li>
+                                        AI untuk Perawatan Kesehatan
+                                    </li>
+                                    <li>
+                                        AI untuk Kota Cerdas
+                                    </li>
+                                    <li>
+                                        AI untuk Pemerintah
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                Bekerja sama dengan IARC (Indonesia AI Research Consortium) untuk mengembangkan AI Research, AI Talent, Collaboration with Industry
+                            </li>
+                            <li>
+                                Dan sebagainya.
                             </li>
                         </ul>
-                    </AboutProgramCardDetail>
-                </AboutProgramCard>
-
-                <AboutProgramCard>
-                    <AboutProgramCardTitle>Rencana pemanfaatan awal DIKTI AI CENTER</AboutProgramCardTitle>
-                    <AboutProgramCardDetail>
-                        <ul>
-                            <li>
-                                <strong>Pelatihan: </strong>
-                                untuk mahasiswa, dan dosen baik tentang materi AI ataupun cara penggunaan  DGX A100
-                            </li>
-                            <li>
-                                <strong>Staging: </strong>
-                                tempat untuk mengembangkan code program yang nantinya akan dideploy di environment deployment.
-                            </li>
-                            <li>
-                                <strong>Deployment Code: </strong>
-                                untuk menjalankan code yang ada untuk proses training ataupun inference
-                            </li>
-                            <li>
-                                <strong>Repository data: </strong>
-                                untuk menyimpan dataset dan model yang dishare agar dapat digunakan untuk kampus-kampus
-                            </li>
-                        </ul>
+                        
                     </AboutProgramCardDetail>
                 </AboutProgramCard>
             </AboutProgramContent>

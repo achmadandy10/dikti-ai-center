@@ -17,6 +17,10 @@ export const RegisterPageLeft = styled.div`
     background-color: var(--first-color);
     width: 100%;
     height: 100%;
+
+    @media Screen and (max-width: 960px) {
+        display: none;
+    }
 `
 
 export const RegisterPageImage = styled.img`
@@ -30,12 +34,21 @@ export const RegisterPageRight = styled.div`
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
+
+    @media Screen and (max-width: 960px) {
+        justify-content: center;
+        width: 100%;
+    }
 `
 
 export const RegisterPageContent = styled.div`
     padding: 40px;
     width: 50%;
     border-radius: 4px;
+
+    @media Screen and (max-width: 960px) {
+        width: 100%;
+    }
 `
 
 export const RegisterPageTitle = styled.h3`

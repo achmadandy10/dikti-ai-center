@@ -101,6 +101,7 @@ export const NavbarBorderBotttom = styled.div`
     width: 0%;
     transition: .3s ease;
     background: var(--first-color);
+    z-index: 1;
 
     &.active {
         width: 100%;

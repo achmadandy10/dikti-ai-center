@@ -44,7 +44,7 @@ export const AboutUsCardDetail = styled.div`
     text-align: justify;
 
     & ul {
-        list-style: dot;
+        list-style: decimal;
         display: flex;
         flex-direction: column;
         gap: 20px;

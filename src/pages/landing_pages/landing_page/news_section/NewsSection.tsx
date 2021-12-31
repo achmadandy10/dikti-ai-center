@@ -97,6 +97,9 @@ const NewsSection = () => {
             <NewsSectionContent>
                 <Swiper
                     breakpoints={{
+                        720: {
+                            slidesPerView: 4
+                        },
                         568: {
                             slidesPerView: 2
                         },
@@ -104,7 +107,6 @@ const NewsSection = () => {
                             slidesPerView: 1
                         }
                     }}
-                    spaceBetween={ 20 }
                     slidesPerView={4}
                     
                     autoplay={{

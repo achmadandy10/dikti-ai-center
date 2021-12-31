@@ -19,6 +19,7 @@ export const RelationSectionContent = styled.div`
     display: flex;
     gap: 20px;
     margin-top: 20px;
+    flex-direction: row-reverse;
     
     @media Screen and (max-width: 960px) {
         flex-direction: column;
@@ -28,23 +29,23 @@ export const RelationSectionContent = styled.div`
 export const RelationSectionContentLeft = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+`
 
-    & ul {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        list-style: circle;
+export const RealationSectionContentTitle = styled.h1`
+    font-size: var(--big-font-size);
+    font-weight: var(--font-bold);
+    color: var(--title-color);
+    text-align: left;
+`
 
-        @media Screen and (max-width: 960px) {
-            padding: 20px;
-        }
-
-        & li {
-            font-size: var(--normal-font-size);
-            font-weight: var(--font-slim);
-            color: var(--text-color);
-        }
-    }
+export const RealationSectionContentSubTitle = styled.h3`
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-normal);
+    color: var(--title-color);
+    text-align: left;
 `
 
 export const RelationSectionContentRight = styled.div`

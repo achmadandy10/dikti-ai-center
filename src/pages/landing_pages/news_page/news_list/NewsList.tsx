@@ -2,11 +2,12 @@ import { useEffect, useState } from "react"
 import { NewsListDetail } from "../../../../dummy/NewsList"
 import { NewsListCard, NewsListCardBody, NewsListCardDate, NewsListCardDetail, NewsListCardFooter, NewsListCardImg, NewsListCardItem, NewsListCardTitle, NewsListContainer, NewsListContent, NewsListHeader, NewsListSlide, NewsListSlideDetail, NewsListSlideDetailBody, NewsListSlideDetailButtonContainer, NewsListSlideDetailDate, NewsListSlideDetailTitle, NewsListSlider, NewsListSlideThumbnail } from "./NewsList.elements"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination, Keyboard, Autoplay } from 'swiper';
+import SwiperCore, { Navigation, Pagination as Paginate, Keyboard, Autoplay } from 'swiper';
 import { Button } from "../../../../components/button/Button";
 import { LoadingElement } from "../../../../components/loading/Loading";
+import Pagination from "../../../../components/pagination/Pagination";
 
-SwiperCore.use([Navigation, Pagination, Keyboard, Autoplay]);
+SwiperCore.use([Navigation, Paginate, Keyboard, Autoplay]);
 
 interface Detail {
     title: string,
@@ -19,6 +20,8 @@ interface Detail {
 const NewsList = () => {
     const [get, setGet] = useState(true)
     const [list, setList] = useState<Detail[]>([])
+    const [currentPage, setCurrentPage] = useState(1)
+    const [postsPerPage] = useState(9)
 
     useEffect(() => {
         const GetDetail = async () => {
@@ -88,8 +91,12 @@ const NewsList = () => {
             </SwiperSlide>
         )
     })
+
+    const indexOfLastPost = currentPage * postsPerPage
+    const indexOfFirstPost = indexOfLastPost - postsPerPage
+    const currentPosts = list.slice(indexOfFirstPost, indexOfLastPost)
     
-    const elementNews = list.map(({ title, slug, body, thumbnail, created_at}, idx) => {
+    const elementNews = currentPosts.map(({ title, slug, body, thumbnail, created_at}, idx) => {
         var newBody = ''
 
         if (body !== null) {
@@ -145,6 +152,7 @@ const NewsList = () => {
         )
     })
 
+    const paginate = (pageNumber: number) => setCurrentPage(pageNumber)
 
     return (
         <NewsListContainer>
@@ -167,6 +175,11 @@ const NewsList = () => {
             <NewsListContent>
                 { elementNews }
             </NewsListContent>
+            <Pagination 
+                totalPosts={ list.length } 
+                postsPerPages={ postsPerPage }
+                paginate={ paginate }
+            />
         </NewsListContainer>
     )
 }

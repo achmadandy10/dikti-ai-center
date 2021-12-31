@@ -3,6 +3,7 @@ import Kemendikbud from "../../../images/kemendikbud.png"
 import InputField from "../../../components/input/Input"
 import { useState } from "react"
 import { Button } from "../../../components/button/Button"
+import { CopyRight } from "../../../components/footer/Footer"
 
 export const LoginPage = () => {
     const [store, setStore] = useState(false)
@@ -73,6 +74,7 @@ export const LoginPage = () => {
                     </LoginPageLinkLabel>
                 </LoginPageLinkContainer>
             </LoginPageContent>
+            <CopyRight/>
         </LoginPageContainer>
     )
 }

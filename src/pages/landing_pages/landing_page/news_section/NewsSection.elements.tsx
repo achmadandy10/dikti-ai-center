@@ -24,9 +24,14 @@ export const NewsSectionSubTitle = styled.h3`
 
 export const NewsSectionContent = styled.div`
     margin-top: 20px;
+
     & .swiper-wrapper {
         padding-top: 20px;
         padding-bottom: 50px;
+    }
+
+    & .swiper-slide {
+        padding: 10px;
     }
 `
 

@@ -31,7 +31,7 @@ export const DropdownService = [
 export const DropdownKedaireka = [
     {
         title: "Tentang",
-        path: "/tentang-kedaireka"
+        path: "/kedaireka/tentang"
     },
     {
         title: "Partner",

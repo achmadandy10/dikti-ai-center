@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutProgramContainer = styled.div`
+export const KedairekaAboutContainer = styled.div`
     padding: 20px 80px;
     width: 100%;
     
@@ -9,19 +9,19 @@ export const AboutProgramContainer = styled.div`
     }
 `
 
-export const AboutProgramTitle = styled.h1`
+export const KedairekaAboutTitle = styled.h1`
     font-size: var(--h1-font-size);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
 `
 
-export const AboutProgramContent = styled.div`
+export const KedairekaAboutContent = styled.div`
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
 `
 
-export const AboutProgramCard = styled.div`
+export const KedairekaAboutCard = styled.div`
     height: 100%;
     box-shadow: var(--bs-smooth);
     background-color: var(--container-color);
@@ -29,32 +29,24 @@ export const AboutProgramCard = styled.div`
     padding: 20px;
 `
 
-export const AboutProgramCardTitle = styled.h3`
+export const KedairekaAboutCardTitle = styled.h3`
     font-size: var(--h1-font-size);
     color: var(--first-color);
     font-weight: var(--font-semi-bold);
     text-align: center;
 `
 
-export const AboutProgramCardDetail = styled.div`
+export const KedairekaAboutCardDetail = styled.div`
     font-size: var(--normal-font-size);
     color: var(--text-color);
     font-weight: var(--font-slim);
     text-align: justify;
 
     & ul {
-        list-style-type: disc;
+        list-style: decimal;
         display: flex;
         flex-direction: column;
         gap: 20px;
         padding: 20px;
-
-        & ol {
-            list-style-type: decimal;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding: 20px;
-        }
     }
 `
