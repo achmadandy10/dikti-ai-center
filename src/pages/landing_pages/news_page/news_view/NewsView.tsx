@@ -29,7 +29,6 @@ const NewsView = () => {
     useEffect(() => {
         const GetDetail = async () => {
             const data = NewsListDetail.filter(v => v.slug === params.get("slug"))
-            console.log(data)
             setList(NewsListDetail)
             setDetail(data[0])
             setGet(false)
@@ -119,6 +118,7 @@ const NewsView = () => {
                             size="small"
                             styled="default"
                             to={ "/berita/view?slug=" + slug }
+                            onClicked={ () => window.location.href="/berita/view?slug=" + slug }
                         >
                             Lihat
                         </Button>  

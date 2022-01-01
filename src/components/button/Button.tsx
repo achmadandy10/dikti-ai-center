@@ -42,10 +42,11 @@ const ButtonSubmit = ({ children, color, size, styled, width, height, onClicked,
     )
 }
 
-const ButtonLink = ({ children, color, size, styled, width, height, fullWidth, to }: Props) => {
+const ButtonLink = ({ children, color, size, styled, width, height, fullWidth, to, onClicked }: Props) => {
     return (
         <ButtonLinkContainer
             color={ color }
+            onClick={ onClicked }
             size={ size }
             styled={ styled }
             width_button={ width }
@@ -85,6 +86,7 @@ export const Button = ({ children,type, color, size, styled, onClicked, to, full
                 width={ width }
                 height={ height }
                 to={ to }
+                onClicked={ onClicked }
                 fullWidth={ fullWidth }
             />
         )
