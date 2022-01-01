@@ -9,41 +9,51 @@ interface Props {
 }
 
 const Pagination = ({ postsPerPages, totalPosts, paginate }: Props) => {
+    const [postTotal] = useState(totalPosts)
+    const [pagesPerPosts] = useState(postsPerPages)
     const [page, setPage] = useState(1)
     const [pages, setPages] = useState([])
     const pageNumbers: any = []
 
-    for (let i = 1; i <= Math.ceil(totalPosts / postsPerPages); i++) {
+    for (let i = 1; i <= Math.ceil(postTotal / pagesPerPosts); i++) {
         pageNumbers.push(i)
     }
-    
+
     useEffect(() => {
-        let breakOfPage: any = [...pages]
+        const mountedPaginate = () => {
 
-        const breakPoint = 0
-        const breakPointLeft = -1
-        const breakPointRight = -2
+            const pageNumbers: any = []
 
-        if (pageNumbers.length < 10) {
-            breakOfPage = pageNumbers
-        } else if (page >= 1 && page <= 3) {
-            breakOfPage = [1, 2, 3, 4, breakPoint, pageNumbers.length]
-        } else if ( page === 4 ) {
-            const sliced = pageNumbers.slice(0, 5)
-            breakOfPage = [...sliced, breakPoint,pageNumbers.length]
-        } else if ( page > 4 && page < pageNumbers.length - 2 ) {
-            const sliced1 = pageNumbers.slice(page - 2, page)
-            const sliced2 = pageNumbers.slice(page, page + 1)
-            breakOfPage = [1, breakPointLeft, ...sliced1, ...sliced2, breakPointRight,pageNumbers.length]
-        } else if (page > pageNumbers.length - 3) {
-            const sliced = pageNumbers.slice(pageNumbers.length - 4)
-            breakOfPage = [1, breakPointLeft, ...sliced]
-        } else if (page === breakPoint) {
-            setPage(pages[pages.length - 3] + 1)
+            for (let i = 1; i <= Math.ceil(postTotal / pagesPerPosts); i++) {
+                pageNumbers.push(i)
+            }
+            let breakOfPage: any = [...pageNumbers]
+    
+            const breakPoint = 0
+            const breakPointLeft = -1
+            const breakPointRight = -2
+    
+            if (pageNumbers.length < 9) {
+                breakOfPage = pageNumbers
+            } else if (page >= 1 && page <= 3) {
+                breakOfPage = [1, 2, 3, 4, breakPoint, pageNumbers.length]
+            } else if ( page === 4 ) {
+                const sliced = pageNumbers.slice(0, 5)
+                breakOfPage = [...sliced, breakPoint,pageNumbers.length]
+            } else if ( page > 4 && page < pageNumbers.length - 2 ) {
+                const sliced1 = pageNumbers.slice(page - 2, page)
+                const sliced2 = pageNumbers.slice(page, page + 1)
+                breakOfPage = [1, breakPointLeft, ...sliced1, ...sliced2, breakPointRight,pageNumbers.length]
+            } else if (page > pageNumbers.length - 3) {
+                const sliced = pageNumbers.slice(pageNumbers.length - 4)
+                breakOfPage = [1, breakPointLeft, ...sliced]
+            }
+    
+            setPages(breakOfPage)
         }
 
-        setPages(breakOfPage)
-    }, [page])
+        mountedPaginate()
+    }, [page, postTotal, pagesPerPosts])
 
     const handleCLick = (i: number) => {
         setPage(i)
