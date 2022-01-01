@@ -1,3 +1,4 @@
+import AboutCollege from "../pages/landing_pages/about_page/about_college/AboutCollege";
 import AboutList from "../pages/landing_pages/about_page/about_list/AboutList";
 import AboutProgram from "../pages/landing_pages/about_page/about_program/AboutProgram";
 import AboutUs from "../pages/landing_pages/about_page/about_us/AboutUs";
@@ -18,6 +19,7 @@ export const RootRoutes = [
     { path: "/tentang/tentang-kami", exact: true, component: AboutUs },
     { path: "/tentang/visi-dan-misi", exact: true, component: AboutVission },
     { path: "/tentang/program", exact: true, component: AboutProgram },
+    { path: "/tentang/kampus-super-komputer", exact: true, component: AboutCollege },
     { path: "/berita", exact: true, component: NewsList },
     { path: "/berita/view", exact: true, component: NewsView },
     { path: "/kedaireka", exact: true, component: KedairekaList },

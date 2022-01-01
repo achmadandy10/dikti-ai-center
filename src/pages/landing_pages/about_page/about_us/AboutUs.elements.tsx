@@ -10,7 +10,7 @@ export const AboutUsContainer = styled.div`
 `
 
 export const AboutUsTitle = styled.h1`
-    font-size: var(--h1-font-size);
+    font-size: var(--big-font-size);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
 `
@@ -43,11 +43,35 @@ export const AboutUsCardDetail = styled.div`
     font-weight: var(--font-slim);
     text-align: justify;
 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+    
+    @media Screen and (max-width: 960px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     & ul {
         list-style: decimal;
         display: flex;
         flex-direction: column;
         gap: 20px;
         padding: 20px;
+    }
+`
+
+export const AboutUsCardImageContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+`
+
+export const AboutUsCardImage = styled.img`
+    width: 100%;
+
+    &.logo {
+        width: 150px;
     }
 `

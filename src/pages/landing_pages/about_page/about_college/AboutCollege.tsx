@@ -1,8 +1,8 @@
-import { UtilizationSectionContainer, UtilizationSectionContent, UtilizationSectionOverlay, UtilizationSectionSlider, UtilizationSectionSliderContent, UtilizationSectionSliderDetail, UtilizationSectionSliderImage, UtilizationSectionSliderName, UtilizationSectionTitle } from "./UtilizationSection.elements"
+import { AboutCollegeContainer, AboutCollegeContent, AboutCollegeOverlay, AboutCollegeSlider, AboutCollegeSliderContent, AboutCollegeSliderDetail, AboutCollegeSliderImage, AboutCollegeSliderName, AboutCollegeTitle } from "./AboutCollege.elements"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Keyboard, Autoplay, Grid } from 'swiper';
 import { useEffect, useState } from "react";
-import { UtilizationDetail } from "../../../../dummy/DetailLandingPage";
+import { CollegeDetail } from "../../../../dummy/College";
 import { LoadingElement } from "../../../../components/loading/Loading";
 
 SwiperCore.use([Navigation, Pagination, Keyboard, Autoplay, Grid]);
@@ -13,13 +13,13 @@ interface Props {
     detail: string
 }
 
-const UtilizationSection = () => {
+const AboutCollege = () => {
     const [get, setGet] = useState(true)
     const [list, setList] = useState<Props[]>([])
 
     useEffect(() => {
         const GetDetail = async () => {
-            setList(UtilizationDetail)
+            setList(CollegeDetail)
             setGet(false)
         }
 
@@ -33,22 +33,22 @@ const UtilizationSection = () => {
     const elementSlider = list.map(({image, name, detail}, idx) => {
         return (
             <SwiperSlide key={ idx }>
-                <UtilizationSectionSlider>
-                    <UtilizationSectionSliderImage src={ image }/>
-                    <UtilizationSectionSliderContent>
-                        <UtilizationSectionSliderName>{ name }</UtilizationSectionSliderName>
-                        <UtilizationSectionSliderDetail>{ detail }</UtilizationSectionSliderDetail>
-                    </UtilizationSectionSliderContent>
-                </UtilizationSectionSlider>
+                <AboutCollegeSlider>
+                    <AboutCollegeSliderImage src={ image }/>
+                    <AboutCollegeSliderContent>
+                        <AboutCollegeSliderName>{ name }</AboutCollegeSliderName>
+                        <AboutCollegeSliderDetail>{ detail }</AboutCollegeSliderDetail>
+                    </AboutCollegeSliderContent>
+                </AboutCollegeSlider>
             </SwiperSlide>
         )
     })
 
     return (
-        <UtilizationSectionContainer>
-            <UtilizationSectionOverlay>
-                <UtilizationSectionTitle>Jumlah Super Komputer yang Dimiliki Perguruan Tinggi</UtilizationSectionTitle>
-                <UtilizationSectionContent>
+        <AboutCollegeContainer>
+            <AboutCollegeOverlay>
+                <AboutCollegeTitle>Jumlah Super Komputer yang Dimiliki Perguruan Tinggi</AboutCollegeTitle>
+                <AboutCollegeContent>
                     <Swiper
                         breakpoints={{
                             700: {
@@ -71,10 +71,10 @@ const UtilizationSection = () => {
                     >
                         { elementSlider }
                     </Swiper>
-                </UtilizationSectionContent>
-            </UtilizationSectionOverlay>
-        </UtilizationSectionContainer>
+                </AboutCollegeContent>
+            </AboutCollegeOverlay>
+        </AboutCollegeContainer>
     )
 }
 
-export default UtilizationSection
+export default AboutCollege

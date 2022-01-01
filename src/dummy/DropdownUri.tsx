@@ -11,6 +11,10 @@ export const DropdownAbout = [
         title: "Program",
         path: "/tentang/program"
     },
+    {
+        title: "Kampus Super Komputer",
+        path: "/tentang/kampus-super-komputer"
+    },
 ]
 
 export const DropdownService = [

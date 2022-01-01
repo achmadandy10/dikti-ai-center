@@ -81,7 +81,7 @@ export const NewsListHeader = styled.div`
 `
 
 export const NewsListHeaderTitle = styled.h1`
-    font-size: var(--h1-font-size);
+    font-size: var(--big-font-size);
     color: var(--title-color);
 `
 

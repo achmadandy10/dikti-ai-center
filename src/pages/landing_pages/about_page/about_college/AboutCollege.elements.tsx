@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import Background from "../../../../images/colored-shapes.png"
 
-export const UtilizationSectionContainer = styled.div`
+export const AboutCollegeContainer = styled.div`
     background-image: url(${Background});
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,7 +9,7 @@ export const UtilizationSectionContainer = styled.div`
     width: 100%;
 `
 
-export const UtilizationSectionOverlay = styled.div`
+export const AboutCollegeOverlay = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,13 +23,13 @@ export const UtilizationSectionOverlay = styled.div`
     }
 `
 
-export const UtilizationSectionTitle = styled.h1`
-    font-size: var(--h1-font-size);
+export const AboutCollegeTitle = styled.h1`
+    font-size: var(--big-font-size);
     font-weight: var(--font-bold);
     color: var(--title-color);
 `
 
-export const UtilizationSectionContent = styled.div`
+export const AboutCollegeContent = styled.div`
     margin-top: 20px;
     width: 100%;
     position: relative;
@@ -54,7 +54,7 @@ export const UtilizationSectionContent = styled.div`
     }
 `
 
-export const UtilizationSectionSlider = styled.div`
+export const AboutCollegeSlider = styled.div`
     display: flex;
     box-shadow: var(--bs-smooth);
     background-color: var(--container-color);
@@ -65,19 +65,19 @@ export const UtilizationSectionSlider = styled.div`
     align-items: center;
 `
 
-export const UtilizationSectionSliderImage = styled.img`
+export const AboutCollegeSliderImage = styled.img`
     width: 70px;
     height: 70px;
     border-radius: 50%;
 `
 
-export const UtilizationSectionSliderContent = styled.div`
+export const AboutCollegeSliderContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
 `
 
-export const UtilizationSectionSliderName = styled.h3`
+export const AboutCollegeSliderName = styled.h3`
     font-size: var(--h3-font-size);
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
@@ -87,7 +87,7 @@ export const UtilizationSectionSliderName = styled.h3`
     }
 `
 
-export const UtilizationSectionSliderDetail = styled.span`
+export const AboutCollegeSliderDetail = styled.span`
     font-size: var(--normal-font-size);
     font-weight: var(--font-slim);
     color: var(--text-color);

@@ -1,8 +1,10 @@
-import { HomeSectionButtonContainer, HomeSectionContainer, HomeSectionContent, HomeSectionDescription, HomeSectionImage, HomeSectionLeft, HomeSectionRight, HomeSectionTitle } from "./HomeSection.elements"
+import { HomeSectionCard, HomeSectionCardContainer, HomeSectionCardDetail, HomeSectionCardFooter, HomeSectionCardHeader, HomeSectionCardIcon, HomeSectionContainer, HomeSectionContent, HomeSectionDescription, HomeSectionImage, HomeSectionLeft, HomeSectionRight, HomeSectionTitle } from "./HomeSection.elements"
 import Firmware from "../../../../images/firmware.svg"
 import { Button } from "../../../../components/button/Button"
 import { useEffect, useState } from "react"
-import { HomeDetail } from "../../../../dummy/DetailLandingPage"
+import { HomeDetail } from "../../../../dummy/LandingPage"
+import { FaChevronRight } from "react-icons/fa"
+import { HiOutlineAcademicCap, HiOutlineBeaker, HiOutlineCog } from "react-icons/hi"
 
 const HomeSection = () => {
     const [detail, setDetail] = useState({
@@ -33,28 +35,77 @@ const HomeSection = () => {
                     <HomeSectionDescription>
                         { detail.description }
                     </HomeSectionDescription>
-                    <HomeSectionButtonContainer>
-                        <Button
-                            type="link"
-                            color="primary"
-                            size="large"
-                            styled="default"
-                            to={"/masuk"}
-                            width={150}
-                        >
-                            Masuk
-                        </Button>
-                        <Button
-                            type="link"
-                            color="primary"
-                            size="large"
-                            styled="border"
-                            to={"/daftar"}
-                            width={150}
-                        >
-                            Daftar
-                        </Button>
-                    </HomeSectionButtonContainer>
+
+                    <HomeSectionCardContainer>
+                        <HomeSectionCard>
+                            <HomeSectionCardDetail>
+                                <HomeSectionCardHeader>
+                                    Untuk Penelitian
+                                </HomeSectionCardHeader>
+                                <HomeSectionCardFooter>
+                                    <Button
+                                        type="link"
+                                        color="warning"
+                                        size="default"
+                                        styled="default"
+                                        to="/penelitian"
+                                    >
+                                        Lihat <FaChevronRight/>
+                                    </Button>
+                                </HomeSectionCardFooter>
+                            </HomeSectionCardDetail>
+
+                            <HomeSectionCardIcon>
+                                <HiOutlineBeaker/>
+                            </HomeSectionCardIcon>
+                        </HomeSectionCard>
+
+                        <HomeSectionCard>
+                            <HomeSectionCardDetail>
+                                <HomeSectionCardHeader>
+                                    Untuk Industri
+                                </HomeSectionCardHeader>
+                                <HomeSectionCardFooter>
+                                    <Button
+                                        type="link"
+                                        color="warning"
+                                        size="default"
+                                        styled="default"
+                                        to="/industri"
+                                    >
+                                        Lihat <FaChevronRight/>
+                                    </Button>
+                                </HomeSectionCardFooter>
+                            </HomeSectionCardDetail>
+
+                            <HomeSectionCardIcon>
+                                <HiOutlineCog/>
+                            </HomeSectionCardIcon>
+                        </HomeSectionCard>
+
+                        <HomeSectionCard>
+                            <HomeSectionCardDetail>
+                                <HomeSectionCardHeader>
+                                    Untuk Mahasiswa
+                                </HomeSectionCardHeader>
+                                <HomeSectionCardFooter>
+                                    <Button
+                                        type="link"
+                                        color="warning"
+                                        size="default"
+                                        styled="default"
+                                        to="/mahasiswa"
+                                    >
+                                        Lihat <FaChevronRight/>
+                                    </Button>
+                                </HomeSectionCardFooter>
+                            </HomeSectionCardDetail>
+
+                            <HomeSectionCardIcon>
+                                <HiOutlineAcademicCap/>
+                            </HomeSectionCardIcon>
+                        </HomeSectionCard>
+                    </HomeSectionCardContainer>
                 </HomeSectionLeft>
 
                 <HomeSectionRight>

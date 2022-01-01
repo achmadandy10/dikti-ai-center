@@ -3,8 +3,8 @@ import { FaBars, FaChevronDown, FaTimes } from "react-icons/fa"
 import { useState } from "react"
 import Dropdown from "../dropdown/Dropdown"
 import { DropdownAbout, DropdownKedaireka, DropdownService } from "../../dummy/DropdownUri"
-import Kemendikbud from "../../images/kemendikbud.png"
-import Kedaireka from "../../images/kedaireka.svg"
+import Dikti from "../../images/dikti.png"
+import Merdeka from "../../images/kmerdeka.png"
 import { Button } from "../button/Button"
 
 const Navbar = () => {
@@ -33,8 +33,8 @@ const Navbar = () => {
                 to={"/"}
                 onClick={ closeMobileMenu }
             >
-                <NavbarLogoImg src={ Kemendikbud }/>
-                <NavbarLogoImg src={ Kedaireka }/>
+                <NavbarLogoImg src={ Dikti }/>
+                <NavbarLogoImg src={ Merdeka }/>
             </NavbarLogo>
 
             <NavbarMenu className={ click ? "active" : "" }>

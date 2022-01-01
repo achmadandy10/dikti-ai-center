@@ -2,10 +2,10 @@ interface Props {
     [name: string]: any
 }
 
-const DashboardPage = (props: Props) => {
+const Dashboard = (props: Props) => {
     return (
         <>Dashboard</>
     )
 }
 
-export default DashboardPage
+export default Dashboard

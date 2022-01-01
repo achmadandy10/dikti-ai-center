@@ -1,9 +1,12 @@
 import { CopyRightContainer, FooterContainer, FooterCopyRight } from "./Footer.elements"
+import dateFormat from "dateformat"
+
+const year = dateFormat("yyyy")
 
 export const CopyRight = () => {
     return (
         <CopyRightContainer>
-            &copy; 2021 Dikti AI Center
+            Direktorat Jenderal Pendidikan Tinggi &copy; { year } All Right Reserved
         </CopyRightContainer>
     )
 }
@@ -11,7 +14,9 @@ export const CopyRight = () => {
 const Footer = () => {
     return (
         <FooterContainer>
-            <FooterCopyRight>&copy; 2021 Dikti AI Center</FooterCopyRight>
+            <FooterCopyRight>
+                Direktorat Jenderal Pendidikan Tinggi &copy; { year } All Right Reserved
+            </FooterCopyRight>
         </FooterContainer>
     )
 }   

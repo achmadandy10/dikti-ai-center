@@ -21,7 +21,8 @@ export const NewsViewContentLeft = styled.div`
 `
 
 export const NewsViewDetailTitle = styled.h1`
-
+    font-size: var(--big-font-size);
+    color: var(--title-color);
 `
 
 export const NewsViewDetailDate = styled.span`

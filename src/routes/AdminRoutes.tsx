@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { Redirect, Route } from "react-router-dom";
 import { LoadingPage } from "../components/loading/Loading";
 import AdminLayout from "../layouts/admin_layout/AdminLayout";
-import DashboardPage from "../pages/admin_pages/dashboard_page/DashboardPage";
+import Dashboard from "../pages/admin_pages/dashboard/Dashboard";
 
 export const AdminRoutes = [
     { path: "/admin", exact: true},
-    { path: "/admin/dasbor", exact: true, component: DashboardPage},
+    { path: "/admin/dasbor", exact: true, component: Dashboard},
 ]
 
 export const AdminPrivateRoute = ({ ...res }) => {

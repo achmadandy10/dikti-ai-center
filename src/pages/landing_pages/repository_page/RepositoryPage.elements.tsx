@@ -26,7 +26,7 @@ export const RepositoryPageDetailItem = styled.div`
 `
 
 export const RepositoryPageTitle = styled.h1`
-    font-size: var(--h1-font-size);
+    font-size: var(--big-font-size);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
 `
@@ -62,7 +62,7 @@ export const RepositoryPageContentHeader = styled.div`
 `
 
 export const RepositoryPageContentTitle = styled.h1`
-    font-size: var(--h1-font-size);
+    font-size: var(--big-font-size);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
 `

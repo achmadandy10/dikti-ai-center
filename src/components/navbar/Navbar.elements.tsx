@@ -27,7 +27,7 @@ export const NavbarLogo = styled(Link)`
 `
 
 export const NavbarLogoImg = styled.img`
-    height: 40px;
+    height: 50px;
 
     @media Screen and (max-width: 960px) {
         height: 30px;

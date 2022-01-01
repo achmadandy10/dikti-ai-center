@@ -50,7 +50,6 @@ const AboutProgram = () => {
                                 Dan sebagainya.
                             </li>
                         </ul>
-                        
                     </AboutProgramCardDetail>
                 </AboutProgramCard>
             </AboutProgramContent>
