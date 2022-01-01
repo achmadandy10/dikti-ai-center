@@ -10,7 +10,7 @@ const FacilitySection = () => {
                 <FacilitySectionContentLeft>
                     <FacilitySectionTitle>Fasilitas</FacilitySectionTitle>
                     <FacilitySectionContentDetail>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis nam eligendi reiciendis nobis vitae distinctio, iste blanditiis obcaecati dolor fugiat dolores asperiores assumenda rerum sint? Consectetur laboriosam obcaecati quos optio.
+                        Solusi kami mencakup berbagai aspek teknik AI, menyediakan infrastruktur dasar untuk membangun dan mengimplementasikan sistem AI dengan cepat. Anda dapat melatih sistem Anda dengan data yang telah diproses sebelumnya dan mengevaluasinya pada perangkat edge di lingkungan nyata.
                     </FacilitySectionContentDetail>
 
                     <Button

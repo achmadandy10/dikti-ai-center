@@ -7,6 +7,7 @@ import { Button } from "../../../../components/button/Button";
 import { LoadingElement } from "../../../../components/loading/Loading";
 import Pagination from "../../../../components/pagination/Pagination";
 import { SearchField } from "../../../../components/input/Input";
+import { removeHTML } from "../../../../function/RemoveTag";
 
 SwiperCore.use([Navigation, Paginate, Keyboard, Autoplay]);
 
@@ -44,6 +45,36 @@ const NewsList = () => {
     }
 
     const elementSlider = list.slice(0, 5).map(({ title, slug, body, thumbnail, created_at}, idx) => {
+        var newTitle = ''
+
+        if (title !== null) {
+            if (window.innerWidth <= 500) {
+                if (title.length <= 25) {
+                    newTitle = title
+                } else {
+                    newTitle = `${title.substring(0, 25)}...`
+                }
+            } else if (window.innerWidth <= 768) {
+                if (title.length <= 25) {
+                    newTitle = title
+                } else {
+                    newTitle = `${title.substring(0, 25)}...`
+                }
+            } else if (window.innerWidth <= 25) {
+                if (title.length <= 200) {
+                    newTitle = title
+                } else {
+                    newTitle = `${title.substring(0, 25)}...`
+                }
+            } else {
+                if (title.length <= 25) {
+                    newTitle = title
+                } else {
+                    newTitle = `${title.substring(0, 25)}...`
+                }
+            }
+        }
+
         var newBody = ''
 
         if (body !== null) {
@@ -79,9 +110,11 @@ const NewsList = () => {
                 <NewsListSlide>
                     <NewsListSlideThumbnail src={thumbnail}/>
                     <NewsListSlideDetail>
-                        <NewsListSlideDetailTitle>{ title }</NewsListSlideDetailTitle>
+                        <NewsListSlideDetailTitle>{ newTitle }</NewsListSlideDetailTitle>
                         <NewsListSlideDetailDate>{ created_at }</NewsListSlideDetailDate>
-                        <NewsListSlideDetailBody dangerouslySetInnerHTML={{ __html: newBody }}/>
+                        <NewsListSlideDetailBody>
+                            { removeHTML(newBody) }
+                        </NewsListSlideDetailBody>
                         <NewsListSlideDetailButtonContainer>
                             <Button
                                 type="link"
@@ -104,6 +137,36 @@ const NewsList = () => {
     const currentPosts = list.slice(indexOfFirstPost, indexOfLastPost)
     
     const elementNews = currentPosts.map(({ title, slug, body, thumbnail, created_at}, idx) => {
+        var newTitle = ''
+
+        if (title !== null) {
+            if (window.innerWidth <= 500) {
+                if (title.length <= 25) {
+                    newTitle = title
+                } else {
+                    newTitle = `${title.substring(0, 25)}...`
+                }
+            } else if (window.innerWidth <= 768) {
+                if (title.length <= 25) {
+                    newTitle = title
+                } else {
+                    newTitle = `${title.substring(0, 25)}...`
+                }
+            } else if (window.innerWidth <= 25) {
+                if (title.length <= 200) {
+                    newTitle = title
+                } else {
+                    newTitle = `${title.substring(0, 25)}...`
+                }
+            } else {
+                if (title.length <= 25) {
+                    newTitle = title
+                } else {
+                    newTitle = `${title.substring(0, 25)}...`
+                }
+            }
+        }
+
         var newBody = ''
 
         if (body !== null) {
@@ -139,8 +202,10 @@ const NewsList = () => {
                 <NewsListCardItem>
                     <NewsListCardImg src={ thumbnail }/>
                     <NewsListCardDetail>
-                        <NewsListCardTitle>{ title }</NewsListCardTitle>
-                        <NewsListCardBody dangerouslySetInnerHTML={{ __html: newBody }}/>
+                        <NewsListCardTitle>{ newTitle }</NewsListCardTitle>
+                        <NewsListCardBody>
+                            { removeHTML(newBody) }
+                        </NewsListCardBody>
                     </NewsListCardDetail>
                 </NewsListCardItem>
                 <NewsListCardFooter>

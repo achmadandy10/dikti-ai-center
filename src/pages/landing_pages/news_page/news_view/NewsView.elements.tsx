@@ -21,7 +21,7 @@ export const NewsViewContentLeft = styled.div`
 `
 
 export const NewsViewDetailTitle = styled.h1`
-    font-size: var(--big-font-size);
+    font-size: var(--h2-font-size);
     color: var(--title-color);
 `
 
@@ -86,7 +86,7 @@ export const NewsViewCardDetail = styled.div`
 `
 
 export const NewsViewCardTitle = styled.h3`
-    font-size: var(--h3-font-size);
+    font-size: var(--normal-font-size);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
 `

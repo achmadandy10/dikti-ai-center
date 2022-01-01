@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { NewsListDetail } from "../../../../dummy/NewsList";
 import { LoadingElement } from "../../../../components/loading/Loading";
 import { Button } from "../../../../components/button/Button";
+import { removeHTML } from "../../../../function/RemoveTag";
 
 SwiperCore.use([Navigation, Pagination, Keyboard, Autoplay]);
 
@@ -34,6 +35,36 @@ const NewsSection = () => {
     }
 
     const elementSlider = list.slice(0, 5).map(({ title, slug, body, thumbnail, created_at}, idx) => {
+        var newTitle = ''
+
+        if (title !== null) {
+            if (window.innerWidth <= 500) {
+                if (title.length <= 25) {
+                    newTitle = title
+                } else {
+                    newTitle = `${title.substring(0, 25)}...`
+                }
+            } else if (window.innerWidth <= 768) {
+                if (title.length <= 25) {
+                    newTitle = title
+                } else {
+                    newTitle = `${title.substring(0, 25)}...`
+                }
+            } else if (window.innerWidth <= 25) {
+                if (title.length <= 200) {
+                    newTitle = title
+                } else {
+                    newTitle = `${title.substring(0, 25)}...`
+                }
+            } else {
+                if (title.length <= 25) {
+                    newTitle = title
+                } else {
+                    newTitle = `${title.substring(0, 25)}...`
+                }
+            }
+        }
+        
         var newBody = ''
 
         if (body !== null) {
@@ -69,9 +100,11 @@ const NewsSection = () => {
                 <NewsSectionSlide>
                     <NewsSectionSlideImage src={ thumbnail }/>
                     <NewsSectionSlideDetail>
-                        <NewsSectionSlideTitle>{ title }</NewsSectionSlideTitle>
+                        <NewsSectionSlideTitle>{ newTitle }</NewsSectionSlideTitle>
                         <NewsSectionSlideDate>{ created_at }</NewsSectionSlideDate>
-                        <NewsSectionSlideBody dangerouslySetInnerHTML={{ __html: newBody }}/>
+                        <NewsSectionSlideBody>
+                            { removeHTML(newBody) }
+                        </NewsSectionSlideBody>
                         <NewsSectionSlideButtonContainer>
                             <Button
                                 type="link"

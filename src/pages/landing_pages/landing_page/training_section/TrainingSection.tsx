@@ -10,7 +10,7 @@ const TrainingSection = () => {
                 <TrainingSectionContentLeft>
                     <TrainingSectionTitle>Pelatihan</TrainingSectionTitle>
                     <TrainingSectionContentDetail>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis nam eligendi reiciendis nobis vitae distinctio, iste blanditiis obcaecati dolor fugiat dolores asperiores assumenda rerum sint? Consectetur laboriosam obcaecati quos optio.
+                        Kegiatan pendidikan dan kualifikasi kami untuk topik AI telah dibuat untuk memenuhi kebutuhan mendesak akan pakar AI. Pelatihan bisa mencakup kebutuhan untuk pelajar, pakar, industri, dan perusahaan rintisan.
                     </TrainingSectionContentDetail>
 
                     <Button

@@ -10,7 +10,7 @@ const ResearchSection = () => {
                 <ResearchSectionContentLeft>
                     <ResearchSectionTitle>Penelitian</ResearchSectionTitle>
                     <ResearchSectionContentDetail>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis nam eligendi reiciendis nobis vitae distinctio, iste blanditiis obcaecati dolor fugiat dolores asperiores assumenda rerum sint? Consectetur laboriosam obcaecati quos optio.
+                        Dikti AI Center mendukung solusi untuk banyak pertanyaan penelitian. Temukan lebih lanjut tentang solusi dan proyek yang telah mendapatkan manfaat dari lab kami.
                     </ResearchSectionContentDetail>
 
                     <Button
