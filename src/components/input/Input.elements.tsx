@@ -16,8 +16,8 @@ export const InputFieldLabel = styled.label<Props>`
     left: 1rem;
     top: 0.75rem;
     padding: 0 0.25rem;
-    background-color: var(--body-color);
-    color: var(--Input-color);
+    background-color: var(--container-color);
+    color: var(--title-color);
     font-size: var(--normal-font-size);
     transition: 0.3s;
     cursor: Input;
@@ -135,4 +135,33 @@ export const InputFieldContainer = styled.div<Props>`
             }
         }}
     }
+`
+
+export const SearchFieldContainer = styled.div`
+    display: flex;
+    align-items: center;
+    background-color: var(--first-color);
+    border-radius: 4px;
+    padding: 7px 7px 7px 14px;
+    gap: 10px;
+    width: 100%;
+`
+
+export const SearchFieldInput = styled.input`
+    padding: 14px;
+    background-color: var(--container-color);
+    color: var(--title-color);
+    font-size: var(--normal-font-size);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+`
+
+export const SearchFieldIcon = styled.span`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--container-color);
+    font-size: var(--normal-font-size);
 `

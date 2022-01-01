@@ -54,22 +54,26 @@ export const NewsViewCard = styled.div`
     border-radius: 4px;
     padding: 20px;
     width: 100%;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 80px auto;
     gap: 10px;
     @media Screen and (max-width: 960px) {
         height: 100%;
     }
 `
 
-export const NewsViewCardImage = styled.img`
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 4px;
+export const NewsViewCardImageContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+`
+
+export const NewsViewCardImage = styled.img`
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
 `
 
 export const NewsViewCardDetail = styled.div`

@@ -26,6 +26,7 @@ export const NewsListSlideThumbnail = styled.img`
     display: block;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 `
 
 export const NewsListSlideDetail = styled.div`
@@ -68,12 +69,30 @@ export const NewsListSlideDetailButtonContainer = styled.div`
     margin-top: 20px;
 `
 
-export const NewsListHeader = styled.h1`
+export const NewsListHeader = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+
+    @media Screen and (max-width: 960px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+`
+
+export const NewsListHeaderTitle = styled.h1`
     font-size: var(--h1-font-size);
     color: var(--title-color);
 `
 
+export const NewsListHeaderSearch = styled.form`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
 export const NewsListContent = styled.div`
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
@@ -81,25 +100,30 @@ export const NewsListContent = styled.div`
     
     @media Screen and (max-width: 960px) {
         grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
     }
 `
 
 export const NewsListCard = styled.div`
     border-radius: 4px;
-    box-shadow: var(--bs-smooth);
+    border: 1px solid var(--text-color-light);
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &:hover {
+        border-color: transparent;
+        box-shadow: var(--bs-smooth);
+    }
 `
 
 export const NewsListCardImg = styled.img`
-    box-shadow: var(--bs-smooth);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    object-fit: cover;
     width: 100%;
     height: 200px;
-    object-fit: cover;
 `
 
 export const NewsListCardItem = styled.div`
@@ -134,5 +158,5 @@ export const NewsListCardFooter = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    border-top: 2px solid var(--title-color);
+    border-top: 1px solid var(--text-color-light);
 `

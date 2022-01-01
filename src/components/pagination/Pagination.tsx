@@ -13,6 +13,7 @@ const Pagination = ({ postsPerPages, totalPosts, paginate }: Props) => {
     const [pagesPerPosts] = useState(postsPerPages)
     const [page, setPage] = useState(1)
     const [pages, setPages] = useState([])
+    
     const pageNumbers: any = []
 
     for (let i = 1; i <= Math.ceil(postTotal / pagesPerPosts); i++) {

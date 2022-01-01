@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { Button } from "../../../../components/button/Button"
 import { LoadingElement } from "../../../../components/loading/Loading"
 import { NewsListDetail } from "../../../../dummy/NewsList"
-import { NewsViewCard, NewsViewCardBody, NewsViewCardButtonContainer, NewsViewCardDate, NewsViewCardDetail, NewsViewCardImage, NewsViewCardTitle, NewsViewContainer, NewsViewContentLeft, NewsViewContentRight, NewsViewDetailDate, NewsViewDetailImage, NewsViewDetailTitle } from "./NewsView.elements"
+import { NewsViewCard, NewsViewCardBody, NewsViewCardButtonContainer, NewsViewCardDate, NewsViewCardDetail, NewsViewCardImage, NewsViewCardImageContainer, NewsViewCardTitle, NewsViewContainer, NewsViewContentLeft, NewsViewContentRight, NewsViewDetailDate, NewsViewDetailImage, NewsViewDetailTitle } from "./NewsView.elements"
 
 interface List {
     title: string,
@@ -68,7 +68,9 @@ const NewsView = () => {
 
         return (
             <NewsViewCard key={ idx }>
-                <NewsViewCardImage src={ thumbnail }/>
+                <NewsViewCardImageContainer>
+                    <NewsViewCardImage src={ thumbnail }/>
+                </NewsViewCardImageContainer>
                 <NewsViewCardDetail>
                     <NewsViewCardTitle>{ title }</NewsViewCardTitle>
                     <NewsViewCardBody dangerouslySetInnerHTML={{ __html: newBody }}/>

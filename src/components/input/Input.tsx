@@ -1,20 +1,60 @@
 import { ReactNode, useState } from "react"
-import { FaEye, FaEyeSlash } from "react-icons/fa"
-import { InputFieldContainer, InputFieldContent, InputFieldError, InputFieldIcon, InputFieldInput, InputFieldLabel } from "./Input.elements"
+import { FaEye, FaEyeSlash, FaSearch } from "react-icons/fa"
+import { InputFieldContainer, InputFieldContent, InputFieldError, InputFieldIcon, InputFieldInput, InputFieldLabel, SearchFieldContainer, SearchFieldIcon, SearchFieldInput } from "./Input.elements"
 
 interface Props {
-    label: string,
-    type?: string,
-    id: string,
-    name: string,
-    value: string,
-    readOnly?: boolean,
-    disabled?: boolean,
-    required?: boolean,
-    error?: string,
-    icon?: string,
-    onChanged: Function,
+    label: string
+    type?: string
+    id: string
+    name: string
+    value: string
+    readOnly?: boolean
+    disabled?: boolean
+    required?: boolean
+    error?: string
+    icon?: string
+    onChanged: Function
 }
+
+interface SearchProps {
+    data: any
+    placeholder: string
+    onChanged: Function
+}
+
+function escapeRegExp(value: any) {
+    return value.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+}
+
+export const SearchField = ({ data, onChanged, placeholder }: SearchProps) => {
+    const [searchText, setSearchText] = useState('');
+    const requestSearch = (value: string) => {
+        setSearchText(value)
+        const searchRegex = new RegExp(escapeRegExp(value), 'i');
+        const filteredRows = data.filter((row: any) => {
+            return Object.keys(row).some((field) => {
+                return searchRegex.test(row[field].toString());
+            });
+        });
+        onChanged(filteredRows)
+    };
+
+    return (
+        <SearchFieldContainer>
+            <SearchFieldIcon>
+                <FaSearch/>
+            </SearchFieldIcon>
+            <SearchFieldInput 
+                type="search"
+                id="search-field"
+                name="search_field"
+                value={ searchText }
+                placeholder={ placeholder }
+                onChange={ (e) => requestSearch(e.target.value) }
+            />
+        </SearchFieldContainer>
+    )
+} 
 
 const InputField = ({ label, type, id, name, value, readOnly, disabled, required, error, icon, onChanged}: Props) => {
     const [visible, setVisible] = useState(true)

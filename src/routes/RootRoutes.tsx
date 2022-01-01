@@ -2,6 +2,7 @@ import AboutList from "../pages/landing_pages/about_page/about_list/AboutList";
 import AboutProgram from "../pages/landing_pages/about_page/about_program/AboutProgram";
 import AboutUs from "../pages/landing_pages/about_page/about_us/AboutUs";
 import AboutVission from "../pages/landing_pages/about_page/about_vission_mission/AboutVission";
+import RepositoryPage from "../pages/landing_pages/repository_page/RepositoryPage";
 import ContactPage from "../pages/landing_pages/contact_page/ContactPage";
 import KedairekaAbout from "../pages/landing_pages/kedaireka_page/kedaireka_about/KedairekaAbout";
 import KedairekaData from "../pages/landing_pages/kedaireka_page/kedaireka_data/KedairekaData";
@@ -23,5 +24,6 @@ export const RootRoutes = [
     { path: "/kedaireka/tentang", exact: true, component: KedairekaAbout },
     { path: "/kedaireka/partner", exact: true, component: KedairekaPartner },
     { path: "/kedaireka/data", exact: true, component: KedairekaData },
+    { path: "/repository", exact: true, component: RepositoryPage },
     { path: "/kontak", exact: true, component: ContactPage },
 ]

@@ -29,7 +29,10 @@ const Navbar = () => {
 
     return (
         <NavbarContainer>
-            <NavbarLogo to={"/"}>
+            <NavbarLogo 
+                to={"/"}
+                onClick={ closeMobileMenu }
+            >
                 <NavbarLogoImg src={ Kemendikbud }/>
                 <NavbarLogoImg src={ Kedaireka }/>
             </NavbarLogo>
@@ -100,6 +103,15 @@ const Navbar = () => {
                             condition={ kedaireka }
                             link={ DropdownKedaireka }
                         />
+                    </NavbarItem>
+
+                    <NavbarItem>
+                        <NavbarLink 
+                            to={"/repository"} 
+                            onClick={ closeMobileMenu }
+                        >
+                            Repository
+                        </NavbarLink>
                     </NavbarItem>
 
                     <NavbarItem>

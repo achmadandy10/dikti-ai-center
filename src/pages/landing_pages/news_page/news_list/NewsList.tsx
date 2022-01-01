@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react"
 import { NewsListDetail } from "../../../../dummy/NewsList"
-import { NewsListCard, NewsListCardBody, NewsListCardDate, NewsListCardDetail, NewsListCardFooter, NewsListCardImg, NewsListCardItem, NewsListCardTitle, NewsListContainer, NewsListContent, NewsListHeader, NewsListSlide, NewsListSlideDetail, NewsListSlideDetailBody, NewsListSlideDetailButtonContainer, NewsListSlideDetailDate, NewsListSlideDetailTitle, NewsListSlider, NewsListSlideThumbnail } from "./NewsList.elements"
+import { NewsListCard, NewsListCardBody, NewsListCardDate, NewsListCardDetail, NewsListCardFooter, NewsListCardImg, NewsListCardItem, NewsListCardTitle, NewsListContainer, NewsListContent, NewsListHeader, NewsListHeaderSearch, NewsListHeaderTitle, NewsListSlide, NewsListSlideDetail, NewsListSlideDetailBody, NewsListSlideDetailButtonContainer, NewsListSlideDetailDate, NewsListSlideDetailTitle, NewsListSlider, NewsListSlideThumbnail } from "./NewsList.elements"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination as Paginate, Keyboard, Autoplay } from 'swiper';
 import { Button } from "../../../../components/button/Button";
 import { LoadingElement } from "../../../../components/loading/Loading";
 import Pagination from "../../../../components/pagination/Pagination";
+import { SearchField } from "../../../../components/input/Input";
 
 SwiperCore.use([Navigation, Paginate, Keyboard, Autoplay]);
 
@@ -22,10 +23,16 @@ const NewsList = () => {
     const [list, setList] = useState<Detail[]>([])
     const [currentPage, setCurrentPage] = useState(1)
     const [postsPerPage] = useState(9)
+    const [search, setSearch] = useState<Detail[]>([])
+
+    const searchInput = (value: []) => {
+        setList(value)
+    }
 
     useEffect(() => {
         const GetDetail = async () => {
             setList(NewsListDetail)
+            setSearch(NewsListDetail)
             setGet(false)
         }
 
@@ -171,7 +178,16 @@ const NewsList = () => {
                 </Swiper>
             </NewsListSlider>
             
-            <NewsListHeader>Berita</NewsListHeader>
+            <NewsListHeader>
+                <NewsListHeaderTitle>Berita</NewsListHeaderTitle>
+                <NewsListHeaderSearch>
+                    <SearchField
+                        data={ search }
+                        placeholder="Cari berita"
+                        onChanged={ searchInput }
+                    />
+                </NewsListHeaderSearch>
+            </NewsListHeader>
             <NewsListContent>
                 { elementNews }
             </NewsListContent>
