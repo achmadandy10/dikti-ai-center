@@ -1,4 +1,4 @@
-import { RealationSectionContentSubTitle, RealationSectionContentTitle, RelationSectionContainer, RelationSectionContent, RelationSectionContentImage, RelationSectionContentLeft, RelationSectionContentRight, RelationSectionTitle } from "./RelationSection.elements"
+import { RelationSectionContentSubTitle, RelationSectionContentTitle, RelationSectionContainer, RelationSectionContent, RelationSectionContentImage, RelationSectionContentLeft, RelationSectionContentRight, RelationSectionTitle } from "./RelationSection.elements"
 import ServerCluster from "../../../../images/secure_server.svg"
 
 const RelationSection = () => {
@@ -7,12 +7,12 @@ const RelationSection = () => {
             <RelationSectionTitle>Jumlah Super Komputer yang Dimiliki Dikti</RelationSectionTitle>
             <RelationSectionContent>
                 <RelationSectionContentLeft>
-                    <RealationSectionContentSubTitle>Juga Dikti akan memiliki</RealationSectionContentSubTitle>
-                    <RealationSectionContentTitle>
+                    <RelationSectionContentSubTitle>Juga Dikti akan memiliki</RelationSectionContentSubTitle>
+                    <RelationSectionContentTitle>
                         5 DGX A100
                         <br />
                         = 25 PetaFLOPS
-                    </RealationSectionContentTitle>
+                    </RelationSectionContentTitle>
                 </RelationSectionContentLeft>
                 <RelationSectionContentRight>
                     <RelationSectionContentImage src={ ServerCluster }/>

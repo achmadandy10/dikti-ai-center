@@ -77,7 +77,12 @@ export const ButtonSubmitContainer = styled.button<Props>`
                     box-shadow: var(--bs-danger);
                 }
             `
-        }  else {
+        }   else if (color === "white") {
+            return `
+                background: var(--container-color);
+                color: var(--first-color);
+            `
+        }   else {
             return `
                 background: var(--text-color);
                 &:hover {
@@ -302,6 +307,11 @@ export const ButtonLinkContainer = styled(Link)<Props>`
                 &:hover {
                     box-shadow: var(--bs-danger);
                 }
+            `
+        }  else if (color === "white") {
+            return `
+                background: var(--container-color);
+                color: var(--first-color);
             `
         }  else {
             return `
