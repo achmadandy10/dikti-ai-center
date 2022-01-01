@@ -11,6 +11,7 @@ export const FacilitySectionContainer = styled.div`
 
     @media Screen and (max-width: 960px) {
         padding: 20px;
+        height: 100%;
     }
 `
 
