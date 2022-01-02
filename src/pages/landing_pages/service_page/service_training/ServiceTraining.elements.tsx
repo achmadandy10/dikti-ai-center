@@ -32,8 +32,12 @@ export const ServiceTrainingCardTitle = styled.h3`
 
 export const ServiceTrainingImageContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto 500px auto;
     gap: 20px;
+
+    @media Screen and (max-width: 960px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 export const ServiceTrainingImage = styled.img`

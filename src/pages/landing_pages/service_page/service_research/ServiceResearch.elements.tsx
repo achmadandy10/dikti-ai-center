@@ -40,8 +40,8 @@ export const ServiceResearchCardContent = styled.div`
 
 export const ServiceResearchList = styled.div`
     display: grid;
-    grid-template-columns: 30px auto;
-    gap: 10px;
+    grid-template-columns: 50px auto;
+    gap: 20px;
 `
 
 export const ServiceResearchNumber = styled.div`

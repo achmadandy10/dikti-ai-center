@@ -23,8 +23,8 @@ const AboutVission = () => {
                 </AboutVissionCard>
 
                 <AboutVissionCard className="mission">
-                    <AboutVissionCardTitle>Misi</AboutVissionCardTitle>
-                    <AboutVissionCardDetail>
+                    <AboutVissionCardTitle className="mission">Misi</AboutVissionCardTitle>
+                    <AboutVissionCardDetail className="mission">
                         <div>
                             <ul>
                                 <li>

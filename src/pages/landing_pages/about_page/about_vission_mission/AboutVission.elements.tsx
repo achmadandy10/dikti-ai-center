@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const AboutVissionContainer = styled.div`
     padding: 20px 80px;
     width: 100%;
-    
+    margin-bottom: 20px;
+
     @media Screen and (max-width: 960px) {
         padding: 20px;
     }
@@ -34,7 +35,7 @@ export const AboutVissionCard = styled.div`
     }
 
     &.mission {
-        background-color: var(--warning-color);
+        background-color: #B8F3ED;
     }
 `
 
@@ -43,14 +44,22 @@ export const AboutVissionCardTitle = styled.h3`
     color: var(--container-color);
     font-weight: var(--font-semi-bold);
     text-align: center;
+
+    &.mission {
+        color: var(--title-color);
+    }
 `
 
 export const AboutVissionCardDetail = styled.div`
     margin-top: 20px;
-    font-size: var(--normal-font-size);
+    font-size: var(--h3-font-size);
     color: var(--container-color);
     font-weight: var(--font-slim);
     text-align: justify;
+
+    &.mission {
+        color: var(--title-color);
+    }
 
     display: flex;
     align-items: center;
