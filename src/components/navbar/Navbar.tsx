@@ -12,7 +12,6 @@ const Navbar = () => {
     const [click, setClick] = useState(false)
     const [about, setAbout] = useState(false)
     const [service, setService] = useState(false)
-    const [kedaireka, setKedaireka] = useState(false)
     const [scroll, setScroll]= useState(false)
 
     const handleClick = () => setClick(!click)
