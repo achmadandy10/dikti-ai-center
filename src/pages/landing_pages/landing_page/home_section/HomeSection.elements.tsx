@@ -102,7 +102,7 @@ export const HomeSectionCardIcon = styled.div`
 `
 
 export const HomeSectionRight = styled.div`
-    flex: 1;
+    flex: 2;
     display: flex;
     align-items: center;
     justify-content: center;
