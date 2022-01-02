@@ -54,5 +54,7 @@ export const FacilitySectionContentRight = styled.div`
 `
 
 export const FacilitySectionContentImage = styled.img`
-    width: 400px;
+    width: 500px;
+    border-radius: 4px;
+    box-shadow: var(--bs-smooth);
 `

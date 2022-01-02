@@ -27,6 +27,7 @@ export const AboutVissionCard = styled.div`
     background-color: var(--container-color);
     margin-top: 20px;
     padding: 20px;
+    border-radius: 4px;
     
     &.vission {
         background-color: var(--first-color);

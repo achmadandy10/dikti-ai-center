@@ -1,5 +1,5 @@
 import { FacilitySectionContainer, FacilitySectionContent, FacilitySectionContentDetail, FacilitySectionContentImage, FacilitySectionContentLeft, FacilitySectionContentRight, FacilitySectionTitle } from "./FacilitySection.elements"
-import ServerCluster from "../../../../images/server_cluster.svg"
+import DGXServer from "../../../../images/dgx-server.jpg"
 import { Button } from "../../../../components/button/Button"
 import { FaChevronRight } from "react-icons/fa"
 
@@ -26,7 +26,7 @@ const FacilitySection = () => {
                     </Button>
                 </FacilitySectionContentLeft>
                 <FacilitySectionContentRight>
-                    <FacilitySectionContentImage src={ ServerCluster }/>
+                    <FacilitySectionContentImage src={ DGXServer }/>
                 </FacilitySectionContentRight>
             </FacilitySectionContent>
         </FacilitySectionContainer>

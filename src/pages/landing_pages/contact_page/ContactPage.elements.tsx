@@ -27,6 +27,7 @@ export const ContactPageCard = styled.div`
     background-color: var(--container-color);
     margin-top: 20px;
     padding: 20px;
+    border-radius: 4px;
 `
 
 export const ContactPageCardTitle = styled.h3`

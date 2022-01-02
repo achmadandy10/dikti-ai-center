@@ -1,6 +1,5 @@
 import HomeSection from "./home_section/HomeSection"
 import NewsSection from "./news_section/NewsSection"
-import RelationSection from "./relation_section/RelationSection"
 import FacilitySection from "./facility_section/FacilitySection"
 import ResearchSection from "./research_section/ResearchSection"
 import TrainingSection from "./training_section/TrainingSection"
@@ -17,7 +16,6 @@ const LandingPage = (props: Props) => {
             <FacilitySection/>
             <ResearchSection/>
             <TrainingSection/>
-            <RelationSection/>
         </>
     )
 }

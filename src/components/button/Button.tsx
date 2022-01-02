@@ -1,5 +1,5 @@
 import { MouseEventHandler, ReactNode } from "react"
-import { ButtonLinkContainer, ButtonSubmitContainer } from "./Button.elements"
+import { ButtonLinkContainer, ButtonLinkHrefContainer, ButtonSubmitContainer } from "./Button.elements"
 import Loader from "react-loader-spinner";
 
 interface Props {
@@ -59,6 +59,23 @@ const ButtonLink = ({ children, color, size, styled, width, height, fullWidth, t
     )
 }
 
+const ButtonLinkHref = ({ children, color, size, styled, width, height, fullWidth, to, onClicked }: Props) => {
+    return (
+        <ButtonLinkHrefContainer
+            color={ color }
+            onClick={ onClicked }
+            size={ size }
+            styled={ styled }
+            width_button={ width }
+            height_button={ height }
+            href={ to }
+            full_width={ fullWidth }
+        >
+            { children }
+        </ButtonLinkHrefContainer>
+    )
+}
+
 export const Button = ({ children,type, color, size, styled, onClicked, to, fullWidth, width, height, loading }: Props) => {
     let element:any = ''
 
@@ -79,6 +96,20 @@ export const Button = ({ children,type, color, size, styled, onClicked, to, full
     } else if (type === "link") {
         element = (
             <ButtonLink
+                children={ children }
+                color={ color }
+                size={ size }
+                styled={ styled }
+                width={ width }
+                height={ height }
+                to={ to }
+                onClicked={ onClicked }
+                fullWidth={ fullWidth }
+            />
+        )
+    } else if ( type === "href" ) {
+        element = (
+            <ButtonLinkHref
                 children={ children }
                 color={ color }
                 size={ size }

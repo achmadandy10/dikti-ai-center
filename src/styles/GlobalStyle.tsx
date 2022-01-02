@@ -7,6 +7,8 @@ export const GlobalStyle = createGlobalStyle`
         --header-height: 3rem;
         /* Colors */
         --first-color: #215C91;
+        --first-second-color: #133553;
+        --first-dark-color: #0E283E;
         --title-color: #393939;
         --text-color: #707070;
         --text-color-light: #A6A6A6;

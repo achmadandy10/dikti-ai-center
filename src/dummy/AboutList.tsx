@@ -14,4 +14,9 @@ export const AboutListDetail = [
         slug: "program",
         thumbnail: "https://ui-avatars.com/api/?name=Program&background=0D8ABC&color=fff",
     },
+    {
+        title: "Kampus Super Komputer",
+        slug: "kampus-super-komputer",
+        thumbnail: "https://ui-avatars.com/api/?name=Kampus+Super+Komputer&background=0D8ABC&color=fff",
+    },
 ]

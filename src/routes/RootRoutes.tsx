@@ -12,6 +12,8 @@ import KedairekaPartner from "../pages/landing_pages/kedaireka_page/kedaireka_pa
 import LandingPage from "../pages/landing_pages/landing_page/LandingPage";
 import NewsList from "../pages/landing_pages/news_page/news_list/NewsList";
 import NewsView from "../pages/landing_pages/news_page/news_view/NewsView";
+import ResearchList from "../pages/landing_pages/research_page/ResearchList";
+import TrainingPage from "../pages/landing_pages/training_page/TrainingPage";
 
 export const RootRoutes = [
     { path: "/", exact: true, component: LandingPage },
@@ -28,4 +30,6 @@ export const RootRoutes = [
     { path: "/kedaireka/data", exact: true, component: KedairekaData },
     { path: "/repository", exact: true, component: RepositoryPage },
     { path: "/kontak", exact: true, component: ContactPage },
+    { path: "/penelitian/list", exact: true, component: ResearchList },
+    { path: "/pelatihan", exact: true, component: TrainingPage },
 ]

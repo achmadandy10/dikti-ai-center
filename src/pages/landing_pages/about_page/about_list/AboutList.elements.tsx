@@ -23,6 +23,7 @@ export const AboutListContent = styled.div`
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 20px;
+    padding: 20px;
 
     @media Screen and (max-width: 960px) {
         grid-template-columns: repeat(1, 1fr);
@@ -32,6 +33,7 @@ export const AboutListContent = styled.div`
 export const AboutListCard = styled.div`
     position: relative;
     height: 100%;
+    border-radius: 4px;
 `
 
 export const AboutListCardImage = styled.img`
@@ -53,12 +55,14 @@ export const AboutListCardDetail = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    padding: 20px;
 `
 
 export const AboutListCardTitle = styled.h3`
     font-size: var(--h1-font-size);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
+    text-align: center;
 `
 
 export const AboutListCardButtonContainer = styled.div`

@@ -30,7 +30,8 @@ export const AboutProgramCard = styled.div`
     box-shadow: var(--bs-smooth);
     background-color: var(--container-color);
     margin-top: 20px;
-    /* padding: 20px; */
+    border-radius: 4px;
+
 `
 
 export const AboutProgramCardTitle = styled.h3`

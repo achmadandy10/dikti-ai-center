@@ -18,7 +18,7 @@ const TrainingSection = () => {
                         color="white"
                         size="default"
                         styled="default"
-                        to="/fasilitas"
+                        to="/pelatihan"
                         width={ window.innerWidth >= 500 ? 200 : 150 }
                         height={ 50 }
                     >

@@ -1,7 +1,6 @@
-import { ResearchSectionContainer, ResearchSectionContent, ResearchSectionContentDetail, ResearchSectionContentImage, ResearchSectionContentLeft, ResearchSectionContentRight, ResearchSectionTitle } from "./ResearchSection.elements"
+import { ResearchSectionContainer, ResearchSectionContent, ResearchSectionContentButtonContainer, ResearchSectionContentDetail, ResearchSectionContentImage, ResearchSectionContentLeft, ResearchSectionContentRight, ResearchSectionTitle } from "./ResearchSection.elements"
 import DevProductivity from "../../../../images/dev_productivity.svg"
 import { Button } from "../../../../components/button/Button"
-import { FaChevronRight } from "react-icons/fa"
 
 const ResearchSection = () => {
     return (
@@ -13,17 +12,30 @@ const ResearchSection = () => {
                         Dikti AI Center mendukung solusi untuk banyak pertanyaan penelitian. Temukan lebih lanjut tentang solusi dan proyek yang telah mendapatkan manfaat dari lab kami.
                     </ResearchSectionContentDetail>
 
-                    <Button
-                        type="link"
-                        color="primary"
-                        size="default"
-                        styled="default"
-                        to="/penelitian"
-                        width={ window.innerWidth >= 500 ? 200 : 150 }
-                        height={ 50 }
-                    >
-                        Lihat Penelitian <FaChevronRight/>
-                    </Button>
+                    <ResearchSectionContentButtonContainer>
+                        <Button
+                            type="link"
+                            color="primary"
+                            size="default"
+                            styled="default"
+                            to="/penelitian/list"
+                            width={ 200 }
+                            height={ 50 }
+                        >
+                            Lihat Penelitian
+                        </Button>
+                        <Button
+                            type="link"
+                            color="primary"
+                            size="default"
+                            styled="border"
+                            to="/daftar-penelitian"
+                            width={ 200 }
+                            height={ 50 }
+                        >
+                            Daftar Penelitian
+                        </Button>
+                    </ResearchSectionContentButtonContainer>
                 </ResearchSectionContentLeft>
                 <ResearchSectionContentRight>
                     <ResearchSectionContentImage src={ DevProductivity }/>

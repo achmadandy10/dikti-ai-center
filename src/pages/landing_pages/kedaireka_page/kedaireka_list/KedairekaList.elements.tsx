@@ -32,6 +32,7 @@ export const KedairekaListContent = styled.div`
 export const KedairekaListCard = styled.div`
     position: relative;
     height: 100%;
+    border-radius: 4px;
 `
 
 export const KedairekaListCardImage = styled.img`
