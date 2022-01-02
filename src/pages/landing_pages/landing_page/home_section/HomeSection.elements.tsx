@@ -30,6 +30,7 @@ export const HomeSectionContent = styled.div`
 `
 
 export const HomeSectionLeft = styled.div`
+    flex: 1;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -101,6 +102,7 @@ export const HomeSectionCardIcon = styled.div`
 `
 
 export const HomeSectionRight = styled.div`
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
