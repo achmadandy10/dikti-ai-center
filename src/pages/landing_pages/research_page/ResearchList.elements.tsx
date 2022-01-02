@@ -26,8 +26,9 @@ export const ResearchListCard = styled.div`
 
 export const ResearchListCardTitle = styled.h3`
     font-size: var(--h1-font-size);
-    color: var(--title-color);
+    color: var(--first-color);
     font-weight: var(--font-semi-bold);
+    text-align: center;
 `
 
 export const ResearchListContentTable = styled.table`

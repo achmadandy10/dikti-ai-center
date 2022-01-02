@@ -6,11 +6,8 @@ export const FooterContainer = styled.div`
     width: 100%;
     background-color: var(--first-second-color);
     font-size: var(--normal-font-size);
-    border-top: 10px solid var(--info-color);
-    margin-top: 20px;
 
     @media only Screen and (max-width: 560px) {
-        flex-direction: column-reverse;
         gap: 10px;
     }
 `
@@ -20,6 +17,11 @@ export const FooterContent = styled.div`
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     padding: 20px 80px;
+    
+    @media only Screen and (max-width: 560px) {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
 `
 
 export const FooterContentItem = styled.div`

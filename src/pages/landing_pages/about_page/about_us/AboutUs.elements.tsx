@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const AboutUsContainer = styled.div`
     padding: 20px 80px;
     width: 100%;
+    margin-bottom: 20px;
 
     @media Screen and (max-width: 960px) {
         padding: 20px;
@@ -67,6 +68,10 @@ export const AboutUsCardImageContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
+
+    @media Screen and (max-width: 960px) {
+        display: none;
+    }
 `
 
 export const AboutUsCardImage = styled.img`

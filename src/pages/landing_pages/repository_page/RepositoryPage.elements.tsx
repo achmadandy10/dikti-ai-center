@@ -23,6 +23,7 @@ export const RepositoryPageDetailItem = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 `
 
 export const RepositoryPageTitle = styled.h1`
@@ -41,12 +42,11 @@ export const RepositoryPageDetailImageContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 70%;
 `
 
 export const RepositoryPageDetailImage = styled.img`
     width: 300px;
-    height: 300px;
 `
 
 export const RepositoryPageContentHeader = styled.div`

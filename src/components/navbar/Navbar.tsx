@@ -68,7 +68,7 @@ const Navbar = () => {
 
                     <NavbarItem>
                         <NavbarLink 
-                            to={"/kegiatan"} 
+                            to={"/#"} 
                             onClick={ closeMobileMenu }
                         >
                             Kegiatan
@@ -117,20 +117,11 @@ const Navbar = () => {
                     </NavbarItem>
 
                     <NavbarItem>
-                        <NavbarLink 
-                            to={"/kontak"} 
-                            onClick={ closeMobileMenu }
-                        >
-                            Kontak
-                        </NavbarLink>
-                    </NavbarItem>
-
-                    <NavbarItem>
                         <Button
                             color="primary"
                             size="default"
                             styled="default"
-                            to="/daftar"
+                            to="/#"
                             type="link"
                         >
                             Daftar

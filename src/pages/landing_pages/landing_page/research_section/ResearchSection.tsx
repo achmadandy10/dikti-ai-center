@@ -29,7 +29,7 @@ const ResearchSection = () => {
                             color="primary"
                             size="default"
                             styled="border"
-                            to="/daftar-penelitian"
+                            to="/layanan/penelitian"
                             width={ 200 }
                             height={ 50 }
                         >

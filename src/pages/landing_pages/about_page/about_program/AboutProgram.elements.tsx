@@ -31,7 +31,6 @@ export const AboutProgramCard = styled.div`
     background-color: var(--container-color);
     margin-top: 20px;
     border-radius: 4px;
-
 `
 
 export const AboutProgramCardTitle = styled.h3`

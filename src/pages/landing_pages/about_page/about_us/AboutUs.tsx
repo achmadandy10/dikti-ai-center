@@ -40,13 +40,22 @@ const AboutUs = () => {
                                 </li>
                             </ul>
 
-                            Pendidikan Tinggi menjadi akan selalu menjadi modal penting lahirnya generasi penerus yang memiliki keunggulan di dalam berbagai bidang. Karenanya, Ditjen Dikti akan terus memberikan pelayanan terbaik dalam ruang lingkup pendidikan tinggi, sehingga cita-cita untuk menjadikan Sumber Daya Manusia yang unggul dapat tercapai dengan baik.
+                            <p>
+                                Pendidikan Tinggi menjadi akan selalu menjadi modal penting lahirnya generasi penerus yang memiliki keunggulan di dalam berbagai bidang. Karenanya, Ditjen Dikti akan terus memberikan pelayanan terbaik dalam ruang lingkup pendidikan tinggi, sehingga cita-cita untuk menjadikan Sumber Daya Manusia yang unggul dapat tercapai dengan baik.
+                            </p>
+                            <br />
                         </div>
 
                         <AboutUsCardImageContainer>
                             <AboutUsCardImage src={ About }/>
                         </AboutUsCardImageContainer>
                     </AboutUsCardDetail>
+                    <p>
+                        Kecerdasan Artifisial membutuhkan perangkat komputasi yang besar (high performance computer), terutama saat membangun model untuk AI berdasarkan pembelajaran pola pada data set.  Kebutuhan perangkat keras ini sering kali menjadi kendala bagi peneliti di Indonesia ataupun mahasiswa dan dosen yang sedang mengembangkan produk berbasiskan AI.  Memang saat ini telah ada beberapa layanan cloud komersial yang menyediakan server komputasi, tetapi  ketika penggunaan dilakukan secara masif dan kontinyu maka biaya total bagi dosen dan mahasiswa menjadi tinggi.
+                        <br />
+                        <br />
+                        Keberadaan fasilitas Super komputer on premise di Indonesia membangun potensi untuk mempelajari AI secara end-to-end, bukan saja dari sisi algoritma atau perangkat lunak yang menerapkan teknologi AI, tetapi juga dari tingkat perangkat keras yang digunakan untuk kebutuhan solusi AI.   Mahasiswa dan dosen mendapat kemungkinan terbuka untuk membangun layanan cloudnya sendiri untuk  kebutuhan AI.  Diharapkan penguasaan teknologi untuk AI oleh talenta Indonesia menjadi lebih lengkap bahkan kemungkinan membangun layanan cloud dan mengoperasikannya nya sendiri untuk kebutuhan Artificial Intelligence.
+                    </p>
                 </AboutUsCard>
             </AboutUsContent>
         </AboutUsContainer>

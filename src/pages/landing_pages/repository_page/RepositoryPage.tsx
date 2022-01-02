@@ -68,7 +68,7 @@ const RepositoryPage = () => {
                 <RepositoryPageDetailItem>
                     <RepositoryPageTitle>Repository</RepositoryPageTitle>
                     <RepositoryPageSubtitle>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquam facilis quam porro libero quas vero asperiores harum delectus optio veritatis, officia natus totam. Libero vero pariatur repudiandae quis rerum?
+                        Salah satu kendala di dalam melakukan penelitian AI adalah adanya data yang dapat digunakan secara bersama oleh para peneliti.  Ketersediaan data adalah komponen penting di dalam penelitian AI. Fasilitas DIKTI AI CENTER ini juga dilengkapi dengan Fasilitas Storage untuk layanan Repositori yang dapat digunakan peneliti dan mahasiswa. Repositori Data terbuka ini akan disediakan untuk menyimpan reusable object misal  data terlabel, corpus, annotated corpus,  pre-trained model dan lain sebagainya.    Diharapkan fasilitas ini akan mengakselerasi terciptanya solusi-solusi AI dan meningkatkan data AI yang memecahkan masalah dengan kekhasan lokal, misal motif batik, image tanaman Indonesia,  data bahasa Indonesia dan lain sebagainya.
                     </RepositoryPageSubtitle>
                     <Button
                         type="link"

@@ -18,7 +18,7 @@ const HomeSection = () => {
             setDetail({
                 title: HomeDetail.title,
                 title_spotlight: HomeDetail.title_spotlight,
-                description: HomeDetail.descripton,
+                description: HomeDetail.description,
             })
         }
 
@@ -48,7 +48,7 @@ const HomeSection = () => {
                                         color="warning"
                                         size="default"
                                         styled="default"
-                                        to="/penelitian"
+                                        to="/#"
                                     >
                                         Lihat <FaChevronRight/>
                                     </Button>
@@ -71,7 +71,7 @@ const HomeSection = () => {
                                         color="warning"
                                         size="default"
                                         styled="default"
-                                        to="/industri"
+                                        to="/#"
                                     >
                                         Lihat <FaChevronRight/>
                                     </Button>
@@ -94,7 +94,7 @@ const HomeSection = () => {
                                         color="warning"
                                         size="default"
                                         styled="default"
-                                        to="/mahasiswa"
+                                        to="/#"
                                     >
                                         Lihat <FaChevronRight/>
                                     </Button>

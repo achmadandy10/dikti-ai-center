@@ -19,16 +19,16 @@ export const DropdownAbout = [
 
 export const DropdownService = [
     {
-        title: "Prototyping",
-        path: "/layanan/pelatihan"
+        title: "Fasilitas",
+        path: "/layanan/fasilitas"
+    },
+    {
+        title: "Penelitian",
+        path: "/layanan/penelitian"
     },
     {
         title: "Pelatihan",
         path: "/layanan/pelatihan"
-    },
-    {
-        title: "Training",
-        path: "/layanan/training"
     },
 ]
 

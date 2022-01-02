@@ -10,7 +10,7 @@ const FacilitySection = () => {
                 <FacilitySectionContentLeft>
                     <FacilitySectionTitle>Fasilitas</FacilitySectionTitle>
                     <FacilitySectionContentDetail>
-                        Solusi kami mencakup berbagai aspek teknik AI, menyediakan infrastruktur dasar untuk membangun dan mengimplementasikan sistem AI dengan cepat. Anda dapat melatih sistem Anda dengan data yang telah diproses sebelumnya dan mengevaluasinya pada perangkat edge di lingkungan nyata.
+                        Untuk mengatasi masalah tersebut Kemdikbudristek meluncurkan suatu fasilitas server komputasi berkemampuan tinggi yang dapat dimanfaatkan secara terbuka oleh semua insan Dikti  di Indonesia.   Fasilitas Superkomputer DIKTI AI Center ini bertujuan agar terciptanya talenta AI nasional melalui berbagai kegiatan pelatihan maupun pendidikan yang bekerja sama dengan industri  dalam kaitannya dengan Merdeka Belajar Kampus Merdeka (MBKM). Fasilitas ini juga  digunakan oleh  perguruan tinggi dan mitra untuk menghasilkan inovasi-inovasi di bidang Artificial Intelligence yang dapat menjawab kebutuhan industri dan lembaga pemerintah.
                     </FacilitySectionContentDetail>
 
                     <Button
@@ -18,7 +18,7 @@ const FacilitySection = () => {
                         color="white"
                         size="default"
                         styled="default"
-                        to="/fasilitas"
+                        to="/#"
                         width={ window.innerWidth >= 500 ? 200 : 150 }
                         height={ 50 }
                     >

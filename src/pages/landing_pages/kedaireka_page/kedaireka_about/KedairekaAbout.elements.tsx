@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const KedairekaAboutContainer = styled.div`
     padding: 20px 80px;
     width: 100%;
+    margin-bottom: 20px;
     
     @media Screen and (max-width: 960px) {
         padding: 20px;
