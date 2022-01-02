@@ -17,8 +17,8 @@ const ServiceTraining = () => {
 
             <ServiceTrainingCard>                   
                 <ServiceTrainingImageContainer>                                                                         
-                    <ServiceTrainingImage src={ SPADA }/>           
                     <ServiceTrainingImage src={ PMAI }/>
+                    <ServiceTrainingImage src={ SPADA }/>           
                     <ServiceTrainingImage src={ TFT }/>
                 </ServiceTrainingImageContainer>
             </ServiceTrainingCard>
