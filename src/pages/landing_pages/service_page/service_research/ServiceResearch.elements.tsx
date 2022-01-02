@@ -50,11 +50,11 @@ export const ServiceResearchNumber = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: var(--h3-font-size);
+    font-size: var(--h1-font-size);
     color: var(--container-color);
 `
 
 export const ServiceResearchText = styled.div`
-    font-size: var(--h3-font-size);
+    font-size: var(--h1-font-size);
     font-weight: var(--font-semi-bold);
 `

@@ -37,9 +37,13 @@ export const HomeSectionLeft = styled.div`
 `
 
 export const HomeSectionTitle = styled.h1`
-    font-size: var(--big-font-size);
+    font-size: 4rem;
     color: var(--title-color);
     font-weight: var(--font-bold);
+
+    @media Screen and (max-width: 960) {
+        font-size: var(--big-font-size);
+    }
 `
 
 export const HomeSectionDescription = styled.p`
