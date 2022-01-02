@@ -30,7 +30,7 @@ export const HomeSectionContent = styled.div`
 `
 
 export const HomeSectionLeft = styled.div`
-    flex: 1;
+    flex: 4;
     display: flex;
     flex-direction: column;
     width: 100%;
