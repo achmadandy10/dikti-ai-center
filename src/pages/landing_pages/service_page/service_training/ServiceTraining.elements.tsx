@@ -31,10 +31,8 @@ export const ServiceTrainingCardTitle = styled.h3`
 `
 
 export const ServiceTrainingImageContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 `
 

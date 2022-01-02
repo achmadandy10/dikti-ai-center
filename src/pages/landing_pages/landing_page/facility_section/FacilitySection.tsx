@@ -18,7 +18,7 @@ const FacilitySection = () => {
                         color="white"
                         size="default"
                         styled="default"
-                        to="/#"
+                        to="/layanan/fasilitas"
                         width={ window.innerWidth >= 500 ? 200 : 150 }
                         height={ 50 }
                     >

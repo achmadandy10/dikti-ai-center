@@ -2,7 +2,7 @@ import { NavbarBorderBotttom, NavbarContainer, NavbarItem, NavbarLink, NavbarLis
 import { FaBars, FaChevronDown, FaTimes } from "react-icons/fa"
 import { useState } from "react"
 import Dropdown from "../dropdown/Dropdown"
-import { DropdownAbout, DropdownKedaireka, DropdownService } from "../../dummy/DropdownUri"
+import { DropdownAbout, DropdownService } from "../../dummy/DropdownUri"
 import Kemendikbud from "../../images/kemendikbud.png"
 import Dikti from "../../images/dikti.png"
 import Merdeka from "../../images/kmerdeka.png"
@@ -88,22 +88,6 @@ const Navbar = () => {
                         <Dropdown 
                             condition={ service }
                             link={ DropdownService }
-                        />
-                    </NavbarItem>
-
-                    <NavbarItem
-                        onMouseEnter={ () => setKedaireka(true) }
-                        onMouseLeave={ () => setKedaireka(false) }
-                    >
-                        <NavbarLink 
-                            to={"/kedaireka"} 
-                            onClick={ closeMobileMenu }
-                        >
-                            Kedaireka <FaChevronDown/>
-                        </NavbarLink>
-                        <Dropdown 
-                            condition={ kedaireka }
-                            link={ DropdownKedaireka }
                         />
                     </NavbarItem>
 
