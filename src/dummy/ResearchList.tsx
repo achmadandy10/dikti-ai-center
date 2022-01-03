@@ -57,6 +57,6 @@ export const ResearchListData = [
         id: 10,
         pt: "Universitas Hasanudin",
         pic: "Dr.Eng. Armin Lawi, S.Si., M.Eng.",
-        tp: "",
+        tp: "Data geolocation telecommunication/signaling, beserta data telecommunication usage dengan ratusan ribu fitur, beragam tipe data dan jutaan data observasi yang bekerjasama dengan Big Data Solution PT Indosat Ooredoo",
     },
 ]
