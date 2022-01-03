@@ -6,7 +6,7 @@ const ServiceResearch = () => {
             <ServiceResearchTitle>Daftar Pelatihan</ServiceResearchTitle>
 
             <ServiceResearchCard>
-                <ServiceResearchCardTitle>Tata Cara Menggunakan Website Dikti AICE</ServiceResearchCardTitle>
+                <ServiceResearchCardTitle>Tata Cara Menggunakan Website Dikti AI Center</ServiceResearchCardTitle>
 
                 <ServiceResearchCardContent>
                     <ServiceResearchList>
