@@ -1,41 +1,50 @@
+import UG from "../images/UG.jpg"
+import UI from "../images/UI.jpg"
+import ITS from "../images/ITS.jpg"
+import UDINUS from "../images/UDINUS.jpg"
+import ITB from "../images/ITB.jpeg"
+import UGM from "../images/UGM.jpg"
+import TelU from "../images/TelU.jpg"
+import UNEJ from "../images/UNEJ.jpeg"
+
 export const CollegeDetail = [
     {
-        image: "http://www.eduday.osmansasi.com/assets/img/pt/UG_2.jpg",
+        image: UG,
         name: "Universitas Gunadarma",
         detail: "11 PetaFLOPS (2 DGX A100 + 1 DGX-1)",
     },
     {
-        image: "https://www.ui.ac.id/wp-content/uploads/2020/11/1859490249.jpg",
+        image: UI,
         name: "Universitas Indonesia",
         detail: "6 PetaFLOPS (1 DGX A100 + 1 DGX-1)",
     },
     {
-        image: "https://www.its.ac.id/wp-content/uploads/2017/09/Gambar2111-1-1024x683.jpg",
+        image: ITS,
         name: "Institut Teknologi Sepuluh November",
         detail: "5 PetaFLOPS (2 DGX A100)",
     },
     {
-        image: "https://static.gatra.com/foldershared/images/2020/intan/03-Mar/IMG_20200313_165047.jpg",
+        image: UDINUS,
         name: "Universitas Dian Nuswantoro",
         detail: "5 PetaFLOPS (2 DGX A100)",
     },
     {
-        image: "https://www.itb.ac.id/files/dokumentasi/1618210624-DSC_8353.JPG",
+        image: ITB,
         name: "Institut Teknologi Bandung",
         detail: "7 PetaFLOPS (1 DGX A100 + 2 DGX-1)",
     },
     {
-        image: "https://gss.geo.ugm.ac.id/wp-content/uploads/sites/802/2019/04/gedung-pusat.jpg",
+        image: UGM,
         name: "Universitas Gajah Mada",
         detail: "6 PetaFLOPS (1 DGX A100 + 1 DGX-1)",
     },
     {
-        image: "https://asset.kompas.com/crops/LFi1xGB3HIIaIAltqu-kRN0IHcI=/196x0:1036x560/750x500/data/photo/2020/09/07/5f55ae3c33eab.jpg",
+        image: TelU,
         name: "Universitas Telkom",
         detail: "5 PetaFLOPS (1 DGX A100)",
     },
     {
-        image: "https://unej.ac.id/wp-content/uploads/2020/06/UNEJ_1.jpeg",
+        image: UNEJ,
         name: "Universitas Jember",
         detail: "2.5 PetaFLOPS (1 DGX Station A100)",
     },
