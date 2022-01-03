@@ -37,7 +37,7 @@ const ResearchList = () => {
 
             <ResearchListCard>
                 <ResearchListCardTitle>
-                    Daftar Penelitian yang Masuk di Dikti AICE
+                    Daftar Penelitian yang Masuk di Dikti AI Center
                 </ResearchListCardTitle>
                 <ResearchListContentTableText>
                     <ResearchListContentTableTitle>Fase 1: </ResearchListContentTableTitle>Januari 2022

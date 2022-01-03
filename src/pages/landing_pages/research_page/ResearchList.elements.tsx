@@ -58,13 +58,13 @@ export const ResearchListContentTable = styled.table`
 `
 
 export const ResearchListContentTableTitle = styled.span`
-    font-size: var(--normal-font-size);
+    font-size: var(--h3-font-size);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
 `
 
 export const ResearchListContentTableText = styled.p`
-    font-size: var(--normal-font-size);
+    font-size: var(--h3-font-size);
     color: var(--title-color);
     font-weight: var(--font-skinny);
 `

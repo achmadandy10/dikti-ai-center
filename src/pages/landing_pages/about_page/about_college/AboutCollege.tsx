@@ -1,9 +1,10 @@
-import { AboutCollegeContainer, AboutCollegeContent, AboutCollegeOverlay, AboutCollegeSlider, AboutCollegeSliderContent, AboutCollegeSliderDetail, AboutCollegeSliderImage, AboutCollegeSliderName, AboutCollegeSubTitle, AboutCollegeTitle } from "./AboutCollege.elements"
+import { AboutCollegeCard, AboutCollegeCardImage, AboutCollegeCardText, AboutCollegeContainer, AboutCollegeContent, AboutCollegeOverlay, AboutCollegeSlider, AboutCollegeSliderContent, AboutCollegeSliderDetail, AboutCollegeSliderImage, AboutCollegeSliderName, AboutCollegeSubTitle } from "./AboutCollege.elements"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Keyboard, Autoplay, Grid } from 'swiper';
 import { useEffect, useState } from "react";
 import { CollegeDetail } from "../../../../dummy/College";
 import { LoadingElement } from "../../../../components/loading/Loading";
+import Kemendikbud from "../../../../images/kemendikbud.png"
 
 SwiperCore.use([Navigation, Pagination, Keyboard, Autoplay, Grid]);
 
@@ -48,7 +49,10 @@ const AboutCollege = () => {
         <AboutCollegeContainer>
             <AboutCollegeOverlay>
                 <AboutCollegeSubTitle>Statistik Fasilitas Komputasi AI</AboutCollegeSubTitle>
-                <AboutCollegeTitle>DIKTI AI CENTER 25TF</AboutCollegeTitle>
+                <AboutCollegeCard>
+                    <AboutCollegeCardImage src={ Kemendikbud }/>
+                    <AboutCollegeCardText>Dikti AI Center 25 PetaFLOPS (5 DGX A100)</AboutCollegeCardText>
+                </AboutCollegeCard>
                 <AboutCollegeContent>
                     <Swiper
                         breakpoints={{

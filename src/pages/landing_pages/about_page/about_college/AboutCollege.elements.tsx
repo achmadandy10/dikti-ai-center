@@ -103,3 +103,27 @@ export const AboutCollegeSliderDetail = styled.span`
         font-size: var(--small-font-size);
     }
 `
+
+export const AboutCollegeCard = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: var(--bs-smooth);
+    background-color: var(--container-color);
+    border-radius: 4px;
+    padding: 20px;
+    width: 100%;
+`
+
+export const AboutCollegeCardImage = styled.img`
+    width: 50px;
+    height: 50px;
+`
+
+export const AboutCollegeCardText = styled.span`
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    text-transform: uppercase;
+`

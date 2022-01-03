@@ -8,7 +8,7 @@ const ServiceFacility = () => {
 
             <ServiceFacilityCard>
                 <ServiceFacilityCardDetail>
-                    DIKTI AI Center memiliki kemampuan  komputasi sebesar 25 TerraFLOPS, menggunakan teknologi dari NVIDIA.   Pemilihan platform ini berdasarkan pertimbangan solusi AI total yang disediakan oleh NVIDIA, baik dari sisi perangkat keras, perangkat lunak dan ketersediaan data.  
+                    DIKTI AI Center memiliki kemampuan  komputasi sebesar 25 PetaFLOPS, menggunakan teknologi dari NVIDIA.   Pemilihan platform ini berdasarkan pertimbangan solusi AI total yang disediakan oleh NVIDIA, baik dari sisi perangkat keras, perangkat lunak dan ketersediaan data.  
                     <br />
                     <br />
                     Fasilitas Super komputer ini disusun dari 5 node mesin server NVIDIA DGX A100, yang masing-masing nodenya memiliki Dual CPU AMD Rome dengan 8 Graphical Processor Unit (GPU) dengan kemampuan Multi Instance GPU (MIG). Dilengkapi 1 TB RAM dan 5 TB High Speed Storage NVME di tiap node server, setiap node ini memiliki 5 TerraFLOPS.  
