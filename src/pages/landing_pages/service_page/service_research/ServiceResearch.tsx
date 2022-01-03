@@ -3,7 +3,7 @@ import { ServiceResearchCard, ServiceResearchCardContent, ServiceResearchCardTit
 const ServiceResearch = () => {
     return (
         <ServiceResearchContainer>
-            <ServiceResearchTitle>Daftar Pelatihan</ServiceResearchTitle>
+            <ServiceResearchTitle>Pelatihan</ServiceResearchTitle>
 
             <ServiceResearchCard>
                 <ServiceResearchCardTitle>Tata Cara Menggunakan Website Dikti AI Center</ServiceResearchCardTitle>

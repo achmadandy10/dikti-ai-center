@@ -10,7 +10,7 @@ export const ServiceResearchContainer = styled.div`
 `
 
 export const ServiceResearchTitle = styled.h1`
-    font-size: var(--title-color);
+    font-size: var(--big-color);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
 `
