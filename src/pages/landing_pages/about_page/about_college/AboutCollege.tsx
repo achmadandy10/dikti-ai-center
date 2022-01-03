@@ -1,4 +1,4 @@
-import { AboutCollegeCard, AboutCollegeCardImage, AboutCollegeCardText, AboutCollegeContainer, AboutCollegeContent, AboutCollegeOverlay, AboutCollegeSlider, AboutCollegeSliderContent, AboutCollegeSliderDetail, AboutCollegeSliderImage, AboutCollegeSliderName, AboutCollegeSubTitle } from "./AboutCollege.elements"
+import { AboutCollegeCard, AboutCollegeContainer, AboutCollegeContent, AboutCollegeOverlay, AboutCollegeSlider, AboutCollegeSliderContent, AboutCollegeSliderDetail, AboutCollegeSliderImage, AboutCollegeSliderName, AboutCollegeSubTitle } from "./AboutCollege.elements"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Keyboard, Autoplay, Grid } from 'swiper';
 import { useEffect, useState } from "react";
@@ -50,8 +50,11 @@ const AboutCollege = () => {
             <AboutCollegeOverlay>
                 <AboutCollegeSubTitle>Statistik Fasilitas Komputasi AI</AboutCollegeSubTitle>
                 <AboutCollegeCard>
-                    <AboutCollegeCardImage src={ Kemendikbud }/>
-                    <AboutCollegeCardText>Dikti AI Center 25 PetaFLOPS (5 DGX A100)</AboutCollegeCardText>
+                    <AboutCollegeSliderImage src={ Kemendikbud }/>
+                    <AboutCollegeSliderContent>
+                        <AboutCollegeSliderName>Dikti AI Center</AboutCollegeSliderName>
+                        <AboutCollegeSliderDetail>25 PetaFLOPS (5 DGX A100)</AboutCollegeSliderDetail>
+                    </AboutCollegeSliderContent>
                 </AboutCollegeCard>
                 <AboutCollegeContent>
                     <Swiper
