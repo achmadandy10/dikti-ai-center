@@ -56,7 +56,7 @@ export const ResearchListData = [
     {
         id: 10,
         pt: "Universitas Hasanudin",
-        pic: "Dr. Ario Yudo Husodo, S.T., M.T.",
+        pic: "Dr.Eng. Armin Lawi, S.Si., M.Eng.",
         tp: "",
     },
 ]
