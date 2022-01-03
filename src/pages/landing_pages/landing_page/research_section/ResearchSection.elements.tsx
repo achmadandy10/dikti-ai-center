@@ -49,6 +49,7 @@ export const ResearchSectionContentDetail = styled.h3`
 export const ResearchSectionContentButtonContainer = styled.div`
     display: flex;
     align-items: center;
+    width: 100%;
     gap: 20px;
 
     @media Screen and (max-width: 960px) {

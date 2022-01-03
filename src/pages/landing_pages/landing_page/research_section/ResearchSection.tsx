@@ -19,10 +19,10 @@ const ResearchSection = () => {
                             size="default"
                             styled="default"
                             to="/penelitian/list"
-                            width={ 200 }
+                            width={ 300 }
                             height={ 50 }
                         >
-                            Lihat Penelitian
+                            Penelitian Berlangsung
                         </Button>
                         <Button
                             type="link"
@@ -30,10 +30,10 @@ const ResearchSection = () => {
                             size="default"
                             styled="border"
                             to="/layanan/penelitian"
-                            width={ 200 }
+                            width={ 300 }
                             height={ 50 }
                         >
-                            Daftar Penelitian
+                            Mendaftartkan Penggunaan
                         </Button>
                     </ResearchSectionContentButtonContainer>
                 </ResearchSectionContentLeft>

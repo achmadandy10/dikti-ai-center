@@ -1,6 +1,36 @@
+import { useEffect, useState } from "react"
+import { ResearchListData } from "../../../dummy/ResearchList"
 import { ResearchListBadgeText, ResearchListCard, ResearchListCardTitle, ResearchListContaner, ResearchListContentTable, ResearchListContentTableText, ResearchListContentTableTitle, ResearchListText, ResearchListTitle } from "./ResearchList.elements"
 
+interface List {
+    id: number
+    pt: string
+    pic: string
+    tp: string
+}
+
 const ResearchList = () => {
+    const [list, setList] = useState<List[]>([])
+
+    useEffect(() => {
+        const GetDetail = async () => {
+            setList(ResearchListData)
+        }
+
+        GetDetail()
+    }, [])
+
+    const elementList = list.map(({ id, pt, pic, tp }, idx) => {
+        return (
+            <tr key={ idx }>
+                <td>{ id }</td>
+                <td>{ pt }</td>
+                <td>{ pic }</td>
+                <td>{ tp }</td>
+            </tr>
+        )
+    })
+
     return (
         <ResearchListContaner>
             <ResearchListTitle>Penelitian</ResearchListTitle>
@@ -16,15 +46,10 @@ const ResearchList = () => {
                     <tr>
                         <th>No</th>
                         <th>PT</th>
-                        <th>PLC</th>
+                        <th>PIC</th>
                         <th>Tema Pelatihan</th>
                     </tr>
-                    <tr>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
+                    { elementList }
                 </ResearchListContentTable>
             </ResearchListCard>
 
