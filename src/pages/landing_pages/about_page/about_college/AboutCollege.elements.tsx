@@ -29,6 +29,13 @@ export const AboutCollegeTitle = styled.h1`
     color: var(--title-color);
 `
 
+export const AboutCollegeSubTitle = styled.h1`
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    text-transform: uppercase;
+`
+
 export const AboutCollegeContent = styled.div`
     margin-top: 20px;
     width: 100%;

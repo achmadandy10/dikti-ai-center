@@ -1,4 +1,4 @@
-import { AboutCollegeContainer, AboutCollegeContent, AboutCollegeOverlay, AboutCollegeSlider, AboutCollegeSliderContent, AboutCollegeSliderDetail, AboutCollegeSliderImage, AboutCollegeSliderName, AboutCollegeTitle } from "./AboutCollege.elements"
+import { AboutCollegeContainer, AboutCollegeContent, AboutCollegeOverlay, AboutCollegeSlider, AboutCollegeSliderContent, AboutCollegeSliderDetail, AboutCollegeSliderImage, AboutCollegeSliderName, AboutCollegeSubTitle, AboutCollegeTitle } from "./AboutCollege.elements"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Keyboard, Autoplay, Grid } from 'swiper';
 import { useEffect, useState } from "react";
@@ -47,7 +47,8 @@ const AboutCollege = () => {
     return (
         <AboutCollegeContainer>
             <AboutCollegeOverlay>
-                <AboutCollegeTitle>Jumlah Super Komputer yang Dimiliki Perguruan Tinggi</AboutCollegeTitle>
+                <AboutCollegeSubTitle>Statistik Fasilitas Komputasi AI</AboutCollegeSubTitle>
+                <AboutCollegeTitle>DIKTI AI CENTER 25TF</AboutCollegeTitle>
                 <AboutCollegeContent>
                     <Swiper
                         breakpoints={{
